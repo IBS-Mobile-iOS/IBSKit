@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="images/ibskit/logo.png" width="256" height="256">
+ <img src="images/ibskit/logo.png" width="256" height="256">
 </p>
 
 <p align="center">
@@ -96,7 +96,45 @@
 #### Dev Tools
 
 ##### Device Specification
+
+To get information about a device, use the IBSDevice class. For example:
+
+```swift
+IBSDevice.current.specification
+```
+
+<p align="center"> 
+ <img src="images/dev-tools/device-specification/ds-ipod-touch.png" width="230.4" height="441.2">
+ <img src="images/dev-tools/device-specification/ds-iphone.png" width="233.6" height="442.8">
+ <img src="images/dev-tools/device-specification/ds-ipad.png" width="318.4" height="442.8">
+</p>
+
 ##### Live Preview
+
+The framework implements Canvas / Hot Reload support for UIKit. In order to use this functionality, you need to add the following code to the end of the file with the successor to UIViewController or UIView:
+
+```swift
+// MARK: - Live Preview
+
+#if DEBUG && canImport(SwiftUI)
+import SwiftUI
+
+@available(iOS 15.0, *)
+struct ClassName_Preview: PreviewProvider {
+    static var previews: some View {
+        ClassName()
+            .livePreview()
+    }
+}
+#endif
+```
+
+Where `ClassName` is the name of your UIViewController or UIView class successor. Calling the livePreview() method translates the view of your class into the View protocol view.
+
+<p align="center"> 
+ <img src="images/dev-tools/live-preview/lp-xcode.png" width="230.4" height="441.2">
+</p>
+
 ##### Project Specification
 
 #### Hardware
