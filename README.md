@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="IBSKit-Icon/IBSKit-Icon.png" width="256" height="256">
+<img src="images/ibskit/logo.png" width="256" height="256">
 </p>
 
 <p align="center">
