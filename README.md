@@ -137,7 +137,7 @@ Where `ClassName` is the name of your UIViewController or UIView class successor
 
 ##### Project Specification
 
-Для того, чтобы получить информацию о версии и билде приложения или фреймворка, используйте:
+To get information about the version and build of the application or framework, use:
 
 ```swift
 IBSApp.info.version
