@@ -1,14 +1,12 @@
-# IBSKit
-
-###### IBSKit is a [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
-
-#### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
-
-- - -
-
 <p align="center"> 
-<img src="IBSKit-Icon/IBSKit-Icon.png">
+<img src="IBSKit-Icon/IBSKit-Icon.png" width="256" height="256">
 </p>
+
+#
+
+### IBSKit is a [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
+
+##### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
 
 - - -
 
