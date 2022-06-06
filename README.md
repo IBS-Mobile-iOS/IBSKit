@@ -1,5 +1,5 @@
 <p align="center"> 
-<img src="images/ibskit/logo.png" width="256" height="256">
+ <img src="images/ibskit/logo.png" width="256" height="256">
 </p>
 
 <p align="center">
@@ -96,6 +96,13 @@
 #### Dev Tools
 
 ##### Device Specification
+
+<p align="center"> 
+ <img src="images/dev-tools/device-specification/ds-ipod-touch.png" width="288" height="552">
+ <img src="images/dev-tools/device-specification/ds-iphone.png" width="292" height="554">
+ <img src="images/dev-tools/device-specification/ds-ipad.png" width="398" height="554">
+</p>
+
 ##### Live Preview
 ##### Project Specification
 
