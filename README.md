@@ -24,10 +24,10 @@
 
 ## Table of Contents
 
-* [**About the framework**](#about-the-framework)
+* **About the framework**
   * [Full description](#full-description)
   * [Used technologies](#used-technologies)
-* [**Availability**](#availability)
+* **Availability**
   * [Supported devices](#supported-devices)
     * [iPod touch](#ipod-touch)
     * [iPhone](#iphone)
@@ -35,10 +35,28 @@
   * [Supported OS](#supported-os)
     * [iOS](#ios)
     * [iPadOS](#ipados)
-* [**A set of features**](#a-set-of-features)
-* [**Other**](#other)
+* **How to add a dependency?**
+  * [Swift Package Manager](#swift-package-manager)
+  * [Another way](#another-way)
+* **IBSKit Features Set**
+  * [Dev Tools](#dev-tools)
+    * [Device Specification](#device-specification)
+    * [Live Preview](#live-preview)
+    * [Project Specification](#project-specification)
+  * [Hardware](#hardware)
+    * [Haptic Feedback](#haptic-feedback)
+  * [Software](#software)
+    * [Split Space Controller](#split-space-controller)
+    * [Donut Chart View](#donut-chart-view)
+    * [Pie Chart View](#pie-chart-view)
+    * [Progress Bar View](#progress-bar-view)
+    * [Ring Progress Bar View](#ring-progress-bar-view)
+    * [Blur Visual FX View](#blur-visual-fx-view)
+    * [Vibrancy Visual FX View](#vibrancy-visual-fx-view)
+* **Other**
   * [Project e-mail](#project-e-mail)
-* [**License**](#license)
+* **License**
+  * [IBSKit license](#ibskit-license)
 
 - - -
 
@@ -87,9 +105,37 @@
 
 - - -
 
-### A set of features
+### How to add a dependency?
 
 ###### *The patch version varies depending on the releases with bug fixes and errors.*
+
+#### Swift Package Manager
+
+#### Another way
+
+- - -
+
+### IBSKit Features Set
+
+#### Dev Tools
+
+##### Device Specification
+##### Live Preview
+##### Project Specification
+
+#### Hardware
+
+##### Haptic Feedback
+
+#### Software
+    
+##### Split Space Controller
+##### Donut Chart View
+##### Pie Chart View
+##### Progress Bar View
+##### Ring Progress Bar View
+##### Blur Visual FX View
+##### Vibrancy Visual FX View
 
 - - -
 
@@ -101,5 +147,7 @@
 - - -
 
 ### License
+
+#### IBSKit license
 
 ##### `⚠️: IBSKit ﹒ IBS. 2022. All Rights Reserved.`
