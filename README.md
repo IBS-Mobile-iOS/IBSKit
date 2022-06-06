@@ -2,8 +2,7 @@
 <img src="IBSKit-Icon/IBSKit-Icon.png" width="256" height="256">
 </p>
 
-
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik&size=30&duration=4000&color=CFECE6&vCenter=true&width=300&lines=IBSKit+XCFramework)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik&size=30&duration=4000&color=CFECE6&vCenter=true&width=300&height=45&lines=IBSKit+XCFramework)](https://git.io/typing-svg)
 
 #### IBSKit is a [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
