@@ -158,6 +158,32 @@ IBSSDK.info.build
 
 ##### Haptic Feedback
 
+Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement tactile recoil, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method:
+
+```swift
+IBSHaptic.feedback.execute(with: IBSHaptic.FeedbackType)
+```
+
+Where `IBSHaptic.FeedbackType` is an enumeration that provides tactile return types.
+
+```swift
+public enum IBSHaptic.FeedbackType: String, CaseIterable {
+    case error = "Error feedback type"
+    case warning = "Warning feedback type"
+    case success = "Success feedback type"
+    case soft = "Soft feedback type"
+    case light = "Light feedback type"
+    case meduim = "Medium feedback type"
+    case heavy = "Heavy feedback type"
+    case rigid = "Rigid feedback type"
+    case selection = "Selection feedback type"
+}
+```
+
+<p align="center"> 
+ <img src="images/hardware/haptic-feedback/hf-ipad.png">
+</p>
+
 #### Software
     
 ##### Split Space Controller
