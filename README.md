@@ -100,7 +100,8 @@
 To get information about a device, use the IBSDevice class. For example:
 
 ```swift
-IBSDevice.current.specification
+let specification = IBSDevice.current.specification
+print(specification)
 ```
 
 <p align="center"> 
