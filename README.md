@@ -39,8 +39,8 @@
     * [Haptic Feedback](#haptic-feedback)
   * [Software](#software)
     * [Split Space Controller](#split-space-controller)
-    * [Donut Chart View](#donut-chart-view)
     * [Pie Chart View](#pie-chart-view)
+    * [Donut Chart View](#donut-chart-view)
     * [Progress Bar View](#progress-bar-view)
     * [Ring Progress Bar View](#ring-progress-bar-view)
     * [Blur Visual FX View](#blur-visual-fx-view)
@@ -187,8 +187,8 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
 #### Software
     
 ##### Split Space Controller
-##### Donut Chart View
 ##### Pie Chart View
+##### Donut Chart View
 ##### Progress Bar View
 ##### Ring Progress Bar View
 ##### Blur Visual FX View
