@@ -137,6 +137,23 @@ Where `ClassName` is the name of your UIViewController or UIView class successor
 
 ##### Project Specification
 
+Для того, чтобы получить информацию о версии и билде приложения или фреймворка, используйте:
+
+```swift
+IBSApp.info.version
+IBSApp.info.build
+```
+or 
+
+```swift
+IBSSDK.info.version
+IBSSDK.info.build
+```
+
+<p align="center"> 
+ <img src="images/dev-tools/project-specification/ps-ipad.png">
+</p>
+
 #### Hardware
 
 ##### Haptic Feedback
