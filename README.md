@@ -164,7 +164,7 @@ Allows you to use the  Taptic Engine without using wrappers to reconciliate t
 IBSHaptic.feedback.execute(with: IBSHaptic.FeedbackType)
 ```
 
-Where `IBSHaptic.FeedbackType` is an enumeration that provides tactile return types.
+Where `IBSHaptic.FeedbackType` is an enumeration that provides haptic feedback types.
 
 ```swift
 public enum IBSHaptic.FeedbackType: String, CaseIterable {
