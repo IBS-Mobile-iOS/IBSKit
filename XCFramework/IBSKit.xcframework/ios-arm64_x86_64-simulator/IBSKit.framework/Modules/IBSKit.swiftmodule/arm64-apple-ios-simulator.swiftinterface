@@ -1,0 +1,799 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name IBSKit
+import AudioToolbox.AudioServices
+import AudioToolbox
+import Foundation
+import QuartzCore
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+@available(iOS 13.0, *)
+public protocol IBSAppProtocol : AnyObject {
+  var version: IBSKit.IBSApp.Version { get }
+  var build: IBSKit.IBSApp.Build { get }
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class IBSBlurVisualFXView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public class var layerClass: Swift.AnyClass {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) public var intensity: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var style: UIKit.UIBlurEffect.Style {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func display(_ layer: QuartzCore.CALayer)
+  @_Concurrency.MainActor(unsafe) public func addSubview(to contentView: UIKit.UIView)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public protocol IBSProgressBarProtocol : AnyObject {
+  func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Float)
+  func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Double)
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) open class IBSSplitSpaceController : UIKit.UIViewController, IBSKit.IBSSplitSpaceControllerProtocol {
+  @_Concurrency.MainActor(unsafe) open var minimumCollapsedLeftSideSize: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var maximumCollapsedLeftSideSize: CoreGraphics.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var leftSideSupportedState: IBSKit.IBSSplitSpaceLeftSideSupportedState {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var leftSide: UIKit.UIViewController {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var rightSide: UIKit.UIViewController {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isLeftSideCollapsed: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public enum IBSProgressBarSyncStatus : Swift.String, Swift.CaseIterable {
+  case error
+  case required
+  case inProgress
+  case completed
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [IBSKit.IBSProgressBarSyncStatus]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IBSKit.IBSProgressBarSyncStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13.0, *)
+public protocol IBSSplitSpaceControllerProtocol : AnyObject {
+  var minimumCollapsedLeftSideSize: CoreGraphics.CGFloat { get }
+  var maximumCollapsedLeftSideSize: CoreGraphics.CGFloat { get }
+  var leftSideSupportedState: IBSKit.IBSSplitSpaceLeftSideSupportedState { get }
+  var leftSide: UIKit.UIViewController { get set }
+  var rightSide: UIKit.UIViewController { get set }
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class IBSPieChartView : UIKit.UIView, IBSKit.IBSRedrawableViewProtocol {
+  public enum SegmentStyle : Swift.Int32 {
+    case dashed
+    case filled
+    case triangled
+    public init?(rawValue: Swift.Int32)
+    public typealias RawValue = Swift.Int32
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  public enum PatternDirection : Swift.Int32 {
+    case topLeftCorner
+    case topSide
+    case topRightCorner
+    case leftSide
+    case rightSide
+    case bottomLeftCorner
+    case bottomSide
+    case bottomRightCorner
+    public init?(rawValue: Swift.Int32)
+    public typealias RawValue = Swift.Int32
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  public struct Total {
+    public var value: CoreGraphics.CGFloat
+    public var color: UIKit.UIColor
+    public var offset: CoreGraphics.CGFloat
+    public init(value: Swift.Int, color: UIKit.UIColor = .clear, offset: CoreGraphics.CGFloat = 0.0)
+    public init(value: Swift.Float, color: UIKit.UIColor = .clear, offset: CoreGraphics.CGFloat = 0.0)
+  }
+  public struct Segment {
+    public var style: IBSKit.IBSPieChartView.SegmentStyle
+    public var value: CoreGraphics.CGFloat
+    public var color: UIKit.UIColor
+    public init(style: IBSKit.IBSPieChartView.SegmentStyle = .filled, value: Swift.Int, color: UIKit.UIColor = .clear)
+    public init(style: IBSKit.IBSPieChartView.SegmentStyle = .filled, value: Swift.Float, color: UIKit.UIColor = .clear)
+  }
+  public struct Pattern {
+    public var size: CoreGraphics.CGFloat
+    public var repeatsCount: CoreGraphics.CGFloat
+    public var direction: IBSKit.IBSPieChartView.PatternDirection
+    public init(size: CoreGraphics.CGFloat, repeatsCount: Swift.UInt16, direction: IBSKit.IBSPieChartView.PatternDirection = .topSide)
+  }
+  public struct TextShadow {
+    public var color: CoreGraphics.CGColor
+    public var offset: CoreGraphics.CGSize
+    public var blur: CoreGraphics.CGFloat
+    public var opacity: Swift.Float
+    public init(color: UIKit.UIColor = .clear, offset: CoreGraphics.CGSize = .init(width: 0.0, height: 0.0), blur: CoreGraphics.CGFloat = 0.0, opacity: Swift.Float = 0.0)
+  }
+  public struct TextAttributes {
+    public var text: Swift.String
+    public var color: UIKit.UIColor
+    public var font: UIKit.UIFont
+    public var shadow: IBSKit.IBSPieChartView.TextShadow
+    public init(text: Swift.String = "", color: UIKit.UIColor = .clear, font: UIKit.UIFont = .systemFont(ofSize: 4.0), shadow: IBSKit.IBSPieChartView.TextShadow = .init())
+  }
+  @_Concurrency.MainActor(unsafe) final public var total: IBSKit.IBSPieChartView.Total {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var segments: [IBSKit.IBSPieChartView.Segment] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var pattern: IBSKit.IBSPieChartView.Pattern {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var textAttributes: IBSKit.IBSPieChartView.TextAttributes {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) final public func redraw()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public protocol IBSSDKProtocol : AnyObject {
+  var version: IBSKit.IBSSDK.Version { get }
+  var build: IBSKit.IBSSDK.Build { get }
+}
+@available(iOS 13.0, *)
+public protocol IBSRedrawableViewProtocol : AnyObject {
+  func redraw()
+}
+@available(iOS 13.0, *)
+public protocol IBSHapticProtocol : AnyObject {
+  func execute(with feedbackType: IBSKit.IBSHaptic.FeedbackType)
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class IBSProgressBarView : UIKit.UIView, IBSKit.IBSProgressBarProtocol {
+  public enum CapStyle : Swift.String, Swift.CaseIterable {
+    case butt
+    case round
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSProgressBarView.CapStyle]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSProgressBarView.CapStyle] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Colors {
+    public var ring: UIKit.UIColor
+    public var progress: UIKit.UIColor
+    public init(ring: UIKit.UIColor = .clear, progress: UIKit.UIColor = .clear)
+  }
+  @_Concurrency.MainActor(unsafe) final public var colors: IBSKit.IBSProgressBarView.Colors {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var width: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var offset: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var cap: IBSKit.IBSProgressBarView.CapStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) final public func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Float)
+  @_Concurrency.MainActor(unsafe) final public func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Double)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class IBSHaptic : IBSKit.IBSHapticProtocol {
+  public enum FeedbackType : Swift.String, Swift.CaseIterable {
+    case error
+    case warning
+    case success
+    case soft
+    case light
+    case meduim
+    case heavy
+    case rigid
+    case selection
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSHaptic.FeedbackType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSHaptic.FeedbackType] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static let feedback: IBSKit.IBSHapticProtocol
+  final public func execute(with feedbackType: IBSKit.IBSHaptic.FeedbackType)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) public class IBSVibrancyVisualFXView : UIKit.UIView {
+  public struct Style {
+    public var blur: UIKit.UIBlurEffect.Style
+    public var vibrancy: UIKit.UIVibrancyEffectStyle
+  }
+  @_Concurrency.MainActor(unsafe) public var intensity: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var style: IBSKit.IBSVibrancyVisualFXView.Style {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func fillContentView(with subview: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func fillContentView(with subviews: [UIKit.UIView])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) open class IBSDonutChartView : UIKit.UIView, IBSKit.IBSRedrawableViewProtocol {
+  public enum SegmentStyle : Swift.Int32, Swift.CaseIterable {
+    case dashed
+    case filled
+    case triangled
+    public init?(rawValue: Swift.Int32)
+    public typealias AllCases = [IBSKit.IBSDonutChartView.SegmentStyle]
+    public typealias RawValue = Swift.Int32
+    public static var allCases: [IBSKit.IBSDonutChartView.SegmentStyle] {
+      get
+    }
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  public enum CapStyle : Swift.String, Swift.CaseIterable {
+    case butt
+    case round
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSDonutChartView.CapStyle]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSDonutChartView.CapStyle] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum PatternDirection : Swift.Int32, Swift.CaseIterable {
+    case topLeftCorner
+    case topSide
+    case topRightCorner
+    case leftSide
+    case rightSide
+    case bottomLeftCorner
+    case bottomSide
+    case bottomRightCorner
+    public init?(rawValue: Swift.Int32)
+    public typealias AllCases = [IBSKit.IBSDonutChartView.PatternDirection]
+    public typealias RawValue = Swift.Int32
+    public static var allCases: [IBSKit.IBSDonutChartView.PatternDirection] {
+      get
+    }
+    public var rawValue: Swift.Int32 {
+      get
+    }
+  }
+  public struct Total {
+    public var value: CoreGraphics.CGFloat
+    public var color: UIKit.UIColor
+    public var offset: CoreGraphics.CGFloat
+    public init(value: Swift.Int, color: UIKit.UIColor = .clear, offset: CoreGraphics.CGFloat = 0.0)
+    public init(value: Swift.Float, color: UIKit.UIColor = .clear, offset: CoreGraphics.CGFloat = 0.0)
+  }
+  public struct Segment {
+    public var style: IBSKit.IBSDonutChartView.SegmentStyle
+    public var value: CoreGraphics.CGFloat
+    public var color: UIKit.UIColor
+    public init(style: IBSKit.IBSDonutChartView.SegmentStyle = .filled, value: Swift.Int, color: UIKit.UIColor = .clear)
+    public init(style: IBSKit.IBSDonutChartView.SegmentStyle = .filled, value: Swift.Float, color: UIKit.UIColor = .clear)
+  }
+  public struct Pattern {
+    public var size: CoreGraphics.CGFloat
+    public var repeatsCount: CoreGraphics.CGFloat
+    public var direction: IBSKit.IBSDonutChartView.PatternDirection
+    public init(size: CoreGraphics.CGFloat, repeatsCount: Swift.UInt16, direction: IBSKit.IBSDonutChartView.PatternDirection = .topSide)
+  }
+  public struct TextShadow {
+    public var color: CoreGraphics.CGColor
+    public var offset: CoreGraphics.CGSize
+    public var blur: CoreGraphics.CGFloat
+    public var opacity: Swift.Float
+    public init(color: UIKit.UIColor = .clear, offset: CoreGraphics.CGSize = .init(width: 0.0, height: 0.0), blur: CoreGraphics.CGFloat = 0.0, opacity: Swift.Float = 0.0)
+  }
+  public struct TextAttributes {
+    public var text: Swift.String
+    public var color: UIKit.UIColor
+    public var font: UIKit.UIFont
+    public var shadow: IBSKit.IBSDonutChartView.TextShadow
+    public init(text: Swift.String = "", color: UIKit.UIColor = .clear, font: UIKit.UIFont = .systemFont(ofSize: 4.0), shadow: IBSKit.IBSDonutChartView.TextShadow = .init())
+  }
+  @_Concurrency.MainActor(unsafe) public var total: IBSKit.IBSDonutChartView.Total
+  @_Concurrency.MainActor(unsafe) public var segments: [IBSKit.IBSDonutChartView.Segment] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var width: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var cap: IBSKit.IBSDonutChartView.CapStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var pattern: IBSKit.IBSDonutChartView.Pattern {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var textAttributes: IBSKit.IBSDonutChartView.TextAttributes {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) public func redraw()
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public enum IBSSplitSpaceLeftSideSupportedState : Swift.String, Swift.CaseIterable {
+  case fold
+  case unfold
+  case all
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [IBSKit.IBSSplitSpaceLeftSideSupportedState]
+  public typealias RawValue = Swift.String
+  public static var allCases: [IBSKit.IBSSplitSpaceLeftSideSupportedState] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class IBSApp : IBSKit.IBSAppProtocol {
+  public typealias Build = Swift.UInt16
+  public struct Version {
+    public var major: Swift.UInt16
+    public var minor: Swift.UInt16
+    public var patch: Swift.UInt16
+  }
+  public static let info: IBSKit.IBSAppProtocol
+  final public let version: IBSKit.IBSApp.Version
+  final public let build: IBSKit.IBSApp.Build
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor(unsafe) final public class IBSRingProgressBarView : UIKit.UIView, IBSKit.IBSProgressBarProtocol {
+  public enum CapStyle : Swift.String, Swift.CaseIterable {
+    case butt
+    case round
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSRingProgressBarView.CapStyle]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSRingProgressBarView.CapStyle] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Colors {
+    public var ring: UIKit.UIColor
+    public var progress: UIKit.UIColor
+    public init(ring: UIKit.UIColor = .clear, progress: UIKit.UIColor = .clear)
+  }
+  @_Concurrency.MainActor(unsafe) final public var colors: IBSKit.IBSRingProgressBarView.Colors {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var width: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var offset: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) final public var cap: IBSKit.IBSRingProgressBarView.CapStyle {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) final public func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Float)
+  @_Concurrency.MainActor(unsafe) final public func update(for status: IBSKit.IBSProgressBarSyncStatus, with progress: Swift.Double)
+  @objc deinit
+}
+@available(iOS 13.0, *)
+public protocol IBSDeviceProtocol : AnyObject {
+  var device: IBSKit.IBSDevice.Device { get }
+  var operatingSystem: IBSKit.IBSDevice.OperatingSystem { get }
+  var software: IBSKit.IBSDevice.Software { get }
+  var hardware: IBSKit.IBSDevice.Hardware { get }
+  var specification: IBSKit.IBSDevice.Specification { get }
+}
+extension UIKit.UIViewController {
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor(unsafe) public func livePreview() -> some SwiftUI.View
+  
+}
+extension UIKit.UIView {
+  @available(iOS 15.0, *)
+  @_Concurrency.MainActor(unsafe) public func livePreview() -> some SwiftUI.View
+  
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class IBSDevice : IBSKit.IBSDeviceProtocol {
+  public struct Device {
+    public enum `Type` : Swift.String, Swift.CaseIterable {
+      case iPod
+      case iPhone
+      case iPad
+      case unknown
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.Device.`Type`]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.Device.`Type`] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Model : Swift.String, Swift.CaseIterable {
+      case iPod_touch
+      case iPhone
+      case iPad
+      case unknown
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.Device.Model]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.Device.Model] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Name : Swift.String, Swift.CaseIterable {
+      case iPod_touch_7th_generation
+      case iPod_touch_undefinedName
+      case iPhone_6s
+      case iPhone_6s_Plus
+      case iPhone_SE_1st_generation
+      case iPhone_7
+      case iPhone_7_Plus
+      case iPhone_8
+      case iPhone_8_Plus
+      case iPhone_X
+      case iPhone_XS
+      case iPhone_XS_Max
+      case iPhone_XR
+      case iPhone_11
+      case iPhone_11_Pro
+      case iPhone_11_Pro_Max
+      case iPhone_SE_2nd_generation
+      case iPhone_12_mini
+      case iPhone_12
+      case iPhone_12_Pro
+      case iPhone_12_Pro_Max
+      case iPhone_13_Pro
+      case iPhone_13_Pro_Max
+      case iPhone_13_mini
+      case iPhone_13
+      case iPhone_SE_3rd_generation
+      case iPhone_undefinedName
+      case iPad_Air_2
+      case iPad_mini_4
+      case iPad_Pro_12_9_1st_generation
+      case iPad_Pro_9_7
+      case iPad_5th_generation
+      case iPad_Pro_10_5
+      case iPad_Pro_12_9_2nd_generation
+      case iPad_6th_generation
+      case iPad_Pro_11
+      case iPad_Pro_12_9_3rd_generation
+      case iPad_Air_3rd_generation
+      case iPad_mini_5th_generation
+      case iPad_7th_generation
+      case iPad_Pro_11_2nd_generation
+      case iPad_Pro_12_9_4th_generation
+      case iPad_8th_generation
+      case iPad_Air_4th_generation
+      case iPad_Pro_11_3rd_generation
+      case iPad_Pro_12_9_5th_generation
+      case iPad_9th_generation
+      case iPad_mini_6th_generation
+      case iPad_Air_5th_generation
+      case iPad_undefinedName
+      case undefined
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.Device.Name]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.Device.Name] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var type: IBSKit.IBSDevice.Device.`Type`
+    public var model: IBSKit.IBSDevice.Device.Model
+    public var name: IBSKit.IBSDevice.Device.Name
+  }
+  public struct OperatingSystem {
+    public enum `Type` : Swift.String, Swift.CaseIterable {
+      case mobile
+      case unknown
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.OperatingSystem.`Type`]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.OperatingSystem.`Type`] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public enum Name : Swift.String, Swift.CaseIterable {
+      case iOS
+      case iPadOS
+      case undefined
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.OperatingSystem.Name]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.OperatingSystem.Name] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public struct Version {
+      public var major: Swift.UInt16
+      public var minor: Swift.UInt16
+      public var patch: Swift.UInt16
+    }
+    public var type: IBSKit.IBSDevice.OperatingSystem.`Type`
+    public var name: IBSKit.IBSDevice.OperatingSystem.Name
+    public var fullname: Swift.String
+    public var version: IBSKit.IBSDevice.OperatingSystem.Version
+  }
+  public struct Software {
+    public enum AppType : Swift.String, Swift.CaseIterable {
+      case iOS
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.Software.AppType]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.Software.AppType] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public var appType: IBSKit.IBSDevice.Software.AppType
+    public var isSimulatorEnvironment: Swift.Bool
+    public var isLowPowerModeEnabled: Swift.Bool
+  }
+  public struct Hardware {
+    public enum SensorAvailability : Swift.String, Swift.CaseIterable {
+      case available
+      case unavailable
+      public init?(rawValue: Swift.String)
+      public typealias AllCases = [IBSKit.IBSDevice.Hardware.SensorAvailability]
+      public typealias RawValue = Swift.String
+      public static var allCases: [IBSKit.IBSDevice.Hardware.SensorAvailability] {
+        get
+      }
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public struct Connectivity {
+      public var gps: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var iBeacon: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var bluetooth: IBSKit.IBSDevice.Hardware.SensorAvailability
+    }
+    public struct IMU {
+      public var accelerometer: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var barometer: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var gyroscope: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var magnetometer: IBSKit.IBSDevice.Hardware.SensorAvailability
+    }
+    public struct Network {
+      public var cellular: IBSKit.IBSDevice.Hardware.SensorAvailability
+      public var wifi: IBSKit.IBSDevice.Hardware.SensorAvailability
+    }
+    public var connectivity: IBSKit.IBSDevice.Hardware.Connectivity
+    public var imu: IBSKit.IBSDevice.Hardware.IMU
+    public var network: IBSKit.IBSDevice.Hardware.Network
+  }
+  public struct Specification {
+    public var type: IBSKit.IBSDevice.Device
+    public var operatingSystem: IBSKit.IBSDevice.OperatingSystem
+    public var software: IBSKit.IBSDevice.Software
+    public var hardware: IBSKit.IBSDevice.Hardware
+  }
+  public static let current: IBSKit.IBSDeviceProtocol
+  final public var device: IBSKit.IBSDevice.Device {
+    get
+  }
+  final public var operatingSystem: IBSKit.IBSDevice.OperatingSystem {
+    get
+  }
+  final public var software: IBSKit.IBSDevice.Software {
+    get
+  }
+  final public var hardware: IBSKit.IBSDevice.Hardware {
+    get
+  }
+  final public var specification: IBSKit.IBSDevice.Specification {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+final public class IBSSDK : IBSKit.IBSSDKProtocol {
+  public typealias Build = Swift.UInt16
+  public struct Version {
+    public var major: Swift.UInt16
+    public var minor: Swift.UInt16
+    public var patch: Swift.UInt16
+  }
+  public static let info: IBSKit.IBSSDKProtocol
+  final public let version: IBSKit.IBSSDK.Version
+  final public let build: IBSKit.IBSSDK.Build
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarSyncStatus : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarSyncStatus : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarSyncStatus : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.SegmentStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.SegmentStyle : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.SegmentStyle : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.PatternDirection : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.PatternDirection : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSPieChartView.PatternDirection : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarView.CapStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarView.CapStyle : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSProgressBarView.CapStyle : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSHaptic.FeedbackType : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSHaptic.FeedbackType : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSHaptic.FeedbackType : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.SegmentStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.SegmentStyle : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.SegmentStyle : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.CapStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.CapStyle : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.CapStyle : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.PatternDirection : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.PatternDirection : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDonutChartView.PatternDirection : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSRingProgressBarView.CapStyle : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSRingProgressBarView.CapStyle : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSRingProgressBarView.CapStyle : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.`Type` : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.`Type` : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.`Type` : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Model : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Model : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Model : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Name : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Name : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Device.Name : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.`Type` : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.`Type` : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.`Type` : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.Name : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.Name : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.OperatingSystem.Name : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Software.AppType : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Software.AppType : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Software.AppType : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Hardware.SensorAvailability : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Hardware.SensorAvailability : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSDevice.Hardware.SensorAvailability : Swift.RawRepresentable {}

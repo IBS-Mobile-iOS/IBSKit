@@ -1,0 +1,4 @@
+framework module IBSKit {
+  header "IBSKit-Swift.h"
+  requires objc
+}
