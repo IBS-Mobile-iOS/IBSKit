@@ -6,7 +6,9 @@
 
 - - -
 
-![image alt](IBSKit-Icon/IBSKit-Icon.png)
+<p align="center"> 
+<img src="IBSKit-Icon/IBSKit-Icon.png">
+</p>
 
 - - -
 
