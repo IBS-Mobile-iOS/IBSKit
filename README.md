@@ -132,7 +132,7 @@ struct ClassName_Preview: PreviewProvider {
 Where `ClassName` is the name of your UIViewController or UIView class successor. Calling the livePreview() method translates the view of your class into the View protocol view.
 
 <p align="center"> 
- <img src="images/dev-tools/live-preview/lp-xcode.png" width="920"1 height="563.5">
+ <img src="images/dev-tools/live-preview/lp-xcode.png">
 </p>
 
 ##### Project Specification
