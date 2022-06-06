@@ -27,14 +27,6 @@
 * **About the framework**
   * [Full description](#full-description)
   * [Used technologies](#used-technologies)
-* **Availability**
-  * [Supported devices](#supported-devices)
-    * [iPod touch](#ipod-touch)
-    * [iPhone](#iphone)
-    * [iPad](#ipad)
-  * [Supported OS](#supported-os)
-    * [iOS](#ios)
-    * [iPadOS](#ipados)
 * **How to add a dependency?**
   * [Swift Package Manager](#swift-package-manager)
   * [Another way](#another-way)
@@ -53,6 +45,14 @@
     * [Ring Progress Bar View](#ring-progress-bar-view)
     * [Blur Visual FX View](#blur-visual-fx-view)
     * [Vibrancy Visual FX View](#vibrancy-visual-fx-view)
+* **Availability**
+  * [Supported devices](#supported-devices)
+    * [iPod touch](#ipod-touch)
+    * [iPhone](#iphone)
+    * [iPad](#ipad)
+  * [Supported OS](#supported-os)
+    * [iOS](#ios)
+    * [iPadOS](#ipados)
 * **Other**
   * [Project e-mail](#project-e-mail)
 * **License**
@@ -78,30 +78,6 @@
 
 #### Used technologies
 
-
-- - -
-
-### Availability
-
-#### Supported devices
-###### iPod touch
-`iPod touch (7th generation)`﹒`or above`
-###### iPhone
-`iPhone SE (1st generation)`﹒`or above`
-###### iPad
-`iPad mini (4th generation)`﹒`or above`  
-`iPad (5th generation)`﹒`or above`  
-`iPad Air (2nd generation)`﹒`or above`  
-`iPad Pro 9.7-inch`  
-`iPad Pro 10.5-inch`  
-`iPad Pro 11-inch (1st generation)`﹒`or above`  
-`iPad Pro 12.9-inch (1st generation)`﹒`or above`
-
-#### Supported OS
-###### iOS
-`iOS 13.0`﹒`and higher`
-###### iPadOS
-`iPadOS 13.0`﹒`and higher`
 
 - - -
 
@@ -136,6 +112,30 @@
 ##### Ring Progress Bar View
 ##### Blur Visual FX View
 ##### Vibrancy Visual FX View
+
+- - -
+
+### Availability
+
+#### Supported devices
+###### iPod touch
+`iPod touch (7th generation)`﹒`or above`
+###### iPhone
+`iPhone SE (1st generation)`﹒`or above`
+###### iPad
+`iPad mini (4th generation)`﹒`or above`  
+`iPad (5th generation)`﹒`or above`  
+`iPad Air (2nd generation)`﹒`or above`  
+`iPad Pro 9.7-inch`  
+`iPad Pro 10.5-inch`  
+`iPad Pro 11-inch (1st generation)`﹒`or above`  
+`iPad Pro 12.9-inch (1st generation)`﹒`or above`
+
+#### Supported OS
+###### iOS
+`iOS 13.0`﹒`and higher`
+###### iPadOS
+`iPadOS 13.0`﹒`and higher`
 
 - - -
 
