@@ -159,7 +159,7 @@ IBSSDK.info.build
 
 ##### Haptic Feedback
 
-Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement tactile recoil, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method:
+Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement taptic feedback, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method:
 
 ```swift
 IBSHaptic.feedback.execute(with: IBSHaptic.FeedbackType)
