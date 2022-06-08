@@ -16,6 +16,10 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik&size=30&duration=3000&color=CFECE6&vCenter=true&lines=IBSKit+Swift+Package)](https://git.io/typing-svg)
 
+### Current Release:
+**Status:** `Beta`  
+**Version:** `1.0.0`
+
 #### IBSKit is an [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
 #### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
