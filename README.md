@@ -141,14 +141,20 @@ Where `ClassName` is the name of your UIViewController or UIView class successor
 To get information about the version and build of the application or framework, use:
 
 ```swift
-IBSApp.info.version
-IBSApp.info.build
+let appVersion = IBSApp.info.version
+print(appVersion)
+
+let appBuild = IBSApp.info.build
+print(appBuild)
 ```
 or 
 
 ```swift
-IBSSDK.info.version
-IBSSDK.info.build
+let sdkVersion = IBSSDK.info.version
+print(sdkVersion)
+
+let sdkBuild = IBSSDK.info.build
+print(sdkBuild)
 ```
 
 <p align="center"> 
@@ -159,10 +165,10 @@ IBSSDK.info.build
 
 ##### Haptic Feedback
 
-Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement taptic feedback, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method:
+Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement taptic feedback, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method. For example:
 
 ```swift
-IBSHaptic.feedback.execute(with: IBSHaptic.FeedbackType)
+IBSHaptic.feedback.execute(with: .success)
 ```
 
 Where `IBSHaptic.FeedbackType` is an enumeration that provides haptic feedback types.
