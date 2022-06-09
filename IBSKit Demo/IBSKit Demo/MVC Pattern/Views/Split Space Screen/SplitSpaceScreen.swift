@@ -22,7 +22,7 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
     // MARK: - Public properties
 
     override var minimumLeftSideSize: CGFloat { 100.0 }
-    override var maximumLeftSideSize: CGFloat { 260.0 }
+    override var maximumLeftSideSize: CGFloat { 280.0 }
 
     override var leftSideInitialState: IBSSplitSpaceController.LeftSideInitialState { .unfold }
 
@@ -51,6 +51,8 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNavigationController()
+
         setupViews()
 
         setupSwipeGestureRecognizer()
@@ -63,6 +65,12 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
     private func setupSplitSpaceController() {
         leftSideViewController = LeftSideScreen()
         rightSideViewController = RightSideScreen()
+    }
+
+    private func setupNavigationController() {
+        navigationItem.title = "\(IBSSplitSpaceController.self)"
+
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     private func setupViews() {

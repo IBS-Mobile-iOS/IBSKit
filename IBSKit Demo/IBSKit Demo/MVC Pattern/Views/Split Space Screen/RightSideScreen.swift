@@ -115,8 +115,6 @@ final class RightSideScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupViews() {
-        view.backgroundColor = .systemOrange
-
         view.addSubview(mainStackView)
     }
 

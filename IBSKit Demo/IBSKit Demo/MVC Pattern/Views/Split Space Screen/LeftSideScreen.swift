@@ -23,7 +23,7 @@ final class LeftSideScreen: UIViewController {
     private let resizableView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 20.0
-        view.backgroundColor = .systemPink
+        view.backgroundColor = .systemGray4
         view.isUserInteractionEnabled = false
         view.clipsToBounds = false
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -53,7 +53,7 @@ final class LeftSideScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupViews() {
-        view.backgroundColor = .systemGreen
+        view.backgroundColor = .systemGray6
 
         view.addSubview(resizableView)
     }
@@ -61,9 +61,9 @@ final class LeftSideScreen: UIViewController {
     private func computeFrames() {
         resizableView.frame = .init(
             x: view.bounds.minX + 20.0,
-            y: view.bounds.minY + 20.0,
+            y: view.bounds.minY + 50.0,
             width: view.bounds.maxX - 40.0,
-            height: view.bounds.maxY - 40.0
+            height: view.bounds.maxY - 70.0
         )
     }
 }
