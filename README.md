@@ -215,7 +215,18 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
 ##### Progress Bar View
 ##### Ring Progress Bar View
 ##### Blur Visual FX View
+
+<p align="center"> 
+ <img src="images/software/blur-vfx-view/bvfxv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/blur-vfx-view/bvfxv-2-iphone.png" width="292" height="553.5">
+</p>
+
 ##### Vibrancy Visual FX View
+
+<p align="center"> 
+ <img src="images/software/vibrancy-vfx-view/vvfxv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/vibrancy-vfx-view/vvfxv-2-iphone.png" width="292" height="553.5">
+</p>
 
 - - -
 
