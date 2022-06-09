@@ -22,6 +22,7 @@ final class LeftSideScreen: UIViewController {
 
     private let resizableView: UIView = {
         let view = UIView()
+        view.layer.cornerRadius = 20.0
         view.backgroundColor = .systemPink
         view.isUserInteractionEnabled = false
         view.clipsToBounds = false
@@ -38,7 +39,13 @@ final class LeftSideScreen: UIViewController {
 
         setupViews()
 
-        makeLayout()
+        computeFrames()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        computeFrames()
     }
 
 
@@ -51,16 +58,13 @@ final class LeftSideScreen: UIViewController {
         view.addSubview(resizableView)
     }
 
-    private func makeLayout() {
-        NSLayoutConstraint.activate([
-            resizableView.leadingAnchor.constraint(equalTo: view.leadingAnchor,
-                                                   constant: 30.0),
-            resizableView.trailingAnchor.constraint(equalTo: view.trailingAnchor,
-                                                    constant: -30.0),
-            resizableView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            resizableView.heightAnchor.constraint(equalTo: resizableView.widthAnchor,
-                                                  multiplier: 1.0)
-        ])
+    private func computeFrames() {
+        resizableView.frame = .init(
+            x: view.bounds.minX + 20.0,
+            y: view.bounds.minY + 20.0,
+            width: view.bounds.maxX - 40.0,
+            height: view.bounds.maxY - 40.0
+        )
     }
 }
 

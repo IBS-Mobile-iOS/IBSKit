@@ -42,8 +42,8 @@ final class RightSideScreen: UIViewController {
             UILabel(),
             UILabel()
         ]
-        labels[0].text = "Swipe left to collapse the left side"
-        labels[1].text = "Swipe right to collapse the left side"
+        labels[0].text = "Swipe left to fold the left side"
+        labels[1].text = "Swipe right to unfold the left side"
         labels.forEach { label in
             label.baselineAdjustment = .alignCenters
             label.textAlignment = .left
@@ -68,6 +68,12 @@ final class RightSideScreen: UIViewController {
             stackView.isUserInteractionEnabled = false
             stackView.clipsToBounds = true
             stackView.translatesAutoresizingMaskIntoConstraints = false
+        }
+        imageViews.forEach { imageView in
+            NSLayoutConstraint.activate([
+                imageView.widthAnchor.constraint(equalToConstant: 20.0),
+                imageView.heightAnchor.constraint(equalToConstant: 20.0)
+            ])
         }
         return stackViews
     }()
@@ -95,7 +101,13 @@ final class RightSideScreen: UIViewController {
 
         setupViews()
 
-        makeLayout()
+        computeFrames()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        computeFrames()
     }
 
 
@@ -108,18 +120,13 @@ final class RightSideScreen: UIViewController {
         view.addSubview(mainStackView)
     }
 
-    private func makeLayout() {
-        imageViews.forEach { imageView in
-            NSLayoutConstraint.activate([
-                imageView.widthAnchor.constraint(equalToConstant: 25.0),
-                imageView.heightAnchor.constraint(equalToConstant: 25.0)
-            ])
-        }
-
-        NSLayoutConstraint.activate([
-            mainStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            mainStackView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-        ])
+    private func computeFrames() {
+        mainStackView.frame = .init(
+            x: view.bounds.midX - 150.0,
+            y: view.bounds.midY - 25.0,
+            width: 300.0,
+            height: 50.0
+        )
     }
 }
 

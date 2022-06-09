@@ -16,7 +16,7 @@ import UIKit
 // MARK: - ApplicationDelegate
 
 @main
-class ApplicationDelegate: UIResponder, UIApplicationDelegate {
+final class ApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Public methods
 

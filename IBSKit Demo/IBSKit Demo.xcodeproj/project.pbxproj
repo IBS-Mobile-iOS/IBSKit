@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B41B96FA2850AEC80060C6DB /* SplitSpaceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */; };
-		B41B96FC2850AED30060C6DB /* IBSSplitSpaceControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96FB2850AED30060C6DB /* IBSSplitSpaceControllerProtocol.swift */; };
-		B41B96FE2850AEDE0060C6DB /* IBSSplitSpaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96FD2850AEDE0060C6DB /* IBSSplitSpaceController.swift */; };
 		B41B97002850B3B70060C6DB /* LeftSideScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */; };
 		B41B97022850B3C00060C6DB /* RightSideScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B97012850B3C00060C6DB /* RightSideScreen.swift */; };
 		B455FE8C284E63F500784258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B455FE8A284E63F500784258 /* LaunchScreen.storyboard */; };
@@ -48,8 +46,6 @@
 
 /* Begin PBXFileReference section */
 		B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSpaceScreen.swift; sourceTree = "<group>"; };
-		B41B96FB2850AED30060C6DB /* IBSSplitSpaceControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBSSplitSpaceControllerProtocol.swift; sourceTree = "<group>"; };
-		B41B96FD2850AEDE0060C6DB /* IBSSplitSpaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBSSplitSpaceController.swift; sourceTree = "<group>"; };
 		B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideScreen.swift; sourceTree = "<group>"; };
 		B41B97012850B3C00060C6DB /* RightSideScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideScreen.swift; sourceTree = "<group>"; };
 		B455FE7C284E63F500784258 /* IBSKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBSKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,8 +87,6 @@
 				B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */,
 				B41B97012850B3C00060C6DB /* RightSideScreen.swift */,
 				B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */,
-				B41B96FB2850AED30060C6DB /* IBSSplitSpaceControllerProtocol.swift */,
-				B41B96FD2850AEDE0060C6DB /* IBSSplitSpaceController.swift */,
 			);
 			path = "Split Space Screen";
 			sourceTree = "<group>";
@@ -390,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41B96FC2850AED30060C6DB /* IBSSplitSpaceControllerProtocol.swift in Sources */,
 				B41B96FA2850AEC80060C6DB /* SplitSpaceScreen.swift in Sources */,
 				B455FEA8284E65C700784258 /* VibrancyVisualFXViewScreen.swift in Sources */,
 				B455FEBF284E66F300784258 /* PreviewBoothScreen.swift in Sources */,
@@ -399,7 +392,6 @@
 				B455FEA0284E655D00784258 /* SceneDelegate.swift in Sources */,
 				B41B97022850B3C00060C6DB /* RightSideScreen.swift in Sources */,
 				B455FEAB284E661500784258 /* BlurVisualFXViewScreen.swift in Sources */,
-				B41B96FE2850AEDE0060C6DB /* IBSSplitSpaceController.swift in Sources */,
 				B455FEB1284E665A00784258 /* DonutChartScreen.swift in Sources */,
 				B455FEB7284E66A400784258 /* HapticFeedbackScreen.swift in Sources */,
 				B455FEAE284E663B00784258 /* ProgressViewsScreen.swift in Sources */,

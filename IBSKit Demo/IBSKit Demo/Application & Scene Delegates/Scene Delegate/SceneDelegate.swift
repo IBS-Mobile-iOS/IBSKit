@@ -15,7 +15,7 @@ import UIKit
 
 // MARK: - SceneDelegate
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // MARK: - Public properties
 

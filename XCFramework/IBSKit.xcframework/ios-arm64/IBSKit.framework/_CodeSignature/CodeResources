@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IBSKit-Swift.h</key>
 		<data>
-		DKYgjq2ajDk3bcdwhusr9QKHPpI=
+		1lUlOb+n6IXhKZ72ZF5FcqRxub4=
 		</data>
 		<key>Headers/IBS_Kit.h</key>
 		<data>
@@ -18,23 +18,19 @@
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NcnGTqX96zkRnlJTjbUo7DULWe8=
+		Rw6Tgy4rNwz9yWFBIaUpd2/8oGM=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Ac09/0WZsnurZAx4tdNkXOLUGx4=
+		t/EPzQxSkQI3Hp74dPhM7cdyHkg=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VsTBNjCDwNzDjKRATLUOaQhWFlk=
+		2ouy0ar1AiHGAJX/CssnIpcoxr0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Uy4pyeJCKgMVkx+h2EXGmQMfZeg=
-		</data>
-		<key>To-Do List.rtf</key>
-		<data>
-		zp5ataa/apcG+tvDgoPbF4ZutU0=
 		</data>
 		<key>iPad11,1.plist</key>
 		<data>
@@ -371,7 +367,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uF1qaeiTp/xpIzQxac8SX8R3vOoxmfD5QQAq1HX+QEY=
+			uxtqFFT7jbgM25kgYhNGGF0f+ChvO/XGlFm7qFB0TFc=
 			</data>
 		</dict>
 		<key>Headers/IBS_Kit.h</key>
@@ -385,21 +381,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			keBmtLX+ei/c9a2n7kyl5jCTpEv44PyyJE5eB8BwSp0=
+			h4fjgQ45R7VhoteR+sPNSoH/PJzPoLtP8KAECgSXtCk=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzAo855piA4fWmJhRiG2eLNf/kA7QW1aJpWwhbD4GGI=
+			13KW6KLYqeGsSHYn7WAm33NyIK8NQ0173wBLkfe02wM=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			moYZ1TcNih84CE2xesibj1IGwKALTNQpflSPONrUQU4=
+			z6zMhLfYpPqHeyWsb4dLye8xXFfTd80KFiI6bpKWYFU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -407,13 +403,6 @@
 			<key>hash2</key>
 			<data>
 			PnAJHyHEh0nFn/FXoUFGq3xo9Vngws2cUFywXMtqkxI=
-			</data>
-		</dict>
-		<key>To-Do List.rtf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zZvts5JhVGLObtG61DdwQjLekAohQtZ6BWYbEal8D5I=
 			</data>
 		</dict>
 		<key>iPad11,1.plist</key>

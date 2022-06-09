@@ -270,9 +270,13 @@ SWIFT_CLASS("_TtC6IBSKit22IBSRingProgressBarView") SWIFT_AVAILABILITY(ios,introd
 @class NSString;
 @class NSBundle;
 
+///
 SWIFT_CLASS("_TtC6IBSKit23IBSSplitSpaceController") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface IBSSplitSpaceController : UIViewController
+///
 - (void)viewDidLoad;
+///
+- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

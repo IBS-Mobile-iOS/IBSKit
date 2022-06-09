@@ -10,6 +10,7 @@
 // MARK: Import section
 
 import UIKit
+import IBSKit
 
 
 
@@ -20,13 +21,30 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
 
     // MARK: - Public properties
 
-    override var minimumLeftSideSize: CGFloat { 200.0 }
-    override var maximumLeftSideSize: CGFloat { 300.0 }
+    override var minimumLeftSideSize: CGFloat { 100.0 }
+    override var maximumLeftSideSize: CGFloat { 260.0 }
 
-    override var leftSideController: UIViewController { LeftSideScreen() }
-    override var rightSideController: UIViewController { RightSideScreen() }
+    override var leftSideInitialState: IBSSplitSpaceController.LeftSideInitialState { .unfold }
+
+    override var leftSideSupportedState: IBSSplitSpaceController.LeftSideSupportedState {
+        IBSDevice.current.device.type == .iPhone ? .all : .unfold
+    }
 
 
+
+    // MARK: - Init
+
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+
+        setupSplitSpaceController()
+    }
+
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+
+        setupSplitSpaceController()
+    }
 
     // MARK: - Overriding parent methods
 
@@ -34,14 +52,38 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
         super.viewDidLoad()
 
         setupViews()
+
+        setupSwipeGestureRecognizer()
     }
 
 
 
     // MARK: - Private functions
 
+    private func setupSplitSpaceController() {
+        leftSideViewController = LeftSideScreen()
+        rightSideViewController = RightSideScreen()
+    }
+
     private func setupViews() {
         view.backgroundColor = .systemBackground
+    }
+
+    private func setupSwipeGestureRecognizer() {
+        let swipeGestureRecognizer = UISwipeGestureRecognizer(target: self,
+                                                              action: #selector(self.handleSwipeGesture(_:)))
+        swipeGestureRecognizer.direction = [.left, .right]
+
+        leftSideViewController.view.addGestureRecognizer(swipeGestureRecognizer)
+    }
+
+
+
+    // MARK: - Event handlers
+
+    @objc
+    private func handleSwipeGesture(_ sender: UISwipeGestureRecognizer) {
+        collapseLeftSide(with: 0.2)
     }
 }
 

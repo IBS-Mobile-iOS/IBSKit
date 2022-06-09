@@ -41,25 +41,54 @@ public protocol IBSProgressBarProtocol : AnyObject {
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) open class IBSSplitSpaceController : UIKit.UIViewController, IBSKit.IBSSplitSpaceControllerProtocol {
-  @_Concurrency.MainActor(unsafe) open var minimumCollapsedLeftSideSize: CoreGraphics.CGFloat {
+  public enum LeftSideSupportedState : Swift.String, Swift.CaseIterable {
+    case all
+    case fold
+    case unfold
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSSplitSpaceController.LeftSideSupportedState]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSSplitSpaceController.LeftSideSupportedState] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum LeftSideInitialState : Swift.String, Swift.CaseIterable {
+    case fold
+    case unfold
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [IBSKit.IBSSplitSpaceController.LeftSideInitialState]
+    public typealias RawValue = Swift.String
+    public static var allCases: [IBSKit.IBSSplitSpaceController.LeftSideInitialState] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) open var minimumLeftSideSize: CoreGraphics.CGFloat {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var maximumCollapsedLeftSideSize: CoreGraphics.CGFloat {
+  @_Concurrency.MainActor(unsafe) open var maximumLeftSideSize: CoreGraphics.CGFloat {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var leftSideSupportedState: IBSKit.IBSSplitSpaceLeftSideSupportedState {
+  @_Concurrency.MainActor(unsafe) open var leftSideInitialState: IBSKit.IBSSplitSpaceController.LeftSideInitialState {
     get
   }
-  @_Concurrency.MainActor(unsafe) open var leftSide: UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) open var leftSideSupportedState: IBSKit.IBSSplitSpaceController.LeftSideSupportedState {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var leftSideViewController: UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) open var rightSideViewController: UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) public var isLeftSideCollapsed: Swift.Bool {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) open var rightSide: UIKit.UIViewController {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) open var isLeftSideCollapsed: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) open func collapseLeftSide(with animationTime: Foundation.TimeInterval)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -82,11 +111,13 @@ public enum IBSProgressBarSyncStatus : Swift.String, Swift.CaseIterable {
 }
 @available(iOS 13.0, *)
 public protocol IBSSplitSpaceControllerProtocol : AnyObject {
-  var minimumCollapsedLeftSideSize: CoreGraphics.CGFloat { get }
-  var maximumCollapsedLeftSideSize: CoreGraphics.CGFloat { get }
-  var leftSideSupportedState: IBSKit.IBSSplitSpaceLeftSideSupportedState { get }
-  var leftSide: UIKit.UIViewController { get set }
-  var rightSide: UIKit.UIViewController { get set }
+  var minimumLeftSideSize: CoreGraphics.CGFloat { get }
+  var maximumLeftSideSize: CoreGraphics.CGFloat { get }
+  var leftSideInitialState: IBSKit.IBSSplitSpaceController.LeftSideInitialState { get }
+  var leftSideSupportedState: IBSKit.IBSSplitSpaceController.LeftSideSupportedState { get }
+  var leftSideViewController: UIKit.UIViewController { get set }
+  var rightSideViewController: UIKit.UIViewController { get set }
+  var isLeftSideCollapsed: Swift.Bool { get set }
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) final public class IBSPieChartView : UIKit.UIView, IBSKit.IBSRedrawableViewProtocol {
@@ -381,21 +412,6 @@ final public class IBSHaptic : IBSKit.IBSHapticProtocol {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor(unsafe) public func redraw()
   @objc deinit
-}
-@available(iOS 13.0, *)
-public enum IBSSplitSpaceLeftSideSupportedState : Swift.String, Swift.CaseIterable {
-  case fold
-  case unfold
-  case all
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [IBSKit.IBSSplitSpaceLeftSideSupportedState]
-  public typealias RawValue = Swift.String
-  public static var allCases: [IBSKit.IBSSplitSpaceLeftSideSupportedState] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
 }
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 final public class IBSApp : IBSKit.IBSAppProtocol {
@@ -696,6 +712,18 @@ final public class IBSSDK : IBSKit.IBSSDKProtocol {
   @objc deinit
 }
 @available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideSupportedState : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideSupportedState : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideSupportedState : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideInitialState : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideInitialState : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension IBSKit.IBSSplitSpaceController.LeftSideInitialState : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
 extension IBSKit.IBSProgressBarSyncStatus : Swift.Equatable {}
 @available(iOS 13.0, *)
 extension IBSKit.IBSProgressBarSyncStatus : Swift.Hashable {}
@@ -743,12 +771,6 @@ extension IBSKit.IBSDonutChartView.PatternDirection : Swift.Equatable {}
 extension IBSKit.IBSDonutChartView.PatternDirection : Swift.Hashable {}
 @available(iOS 13.0, *)
 extension IBSKit.IBSDonutChartView.PatternDirection : Swift.RawRepresentable {}
-@available(iOS 13.0, *)
-extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.Equatable {}
-@available(iOS 13.0, *)
-extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.Hashable {}
-@available(iOS 13.0, *)
-extension IBSKit.IBSSplitSpaceLeftSideSupportedState : Swift.RawRepresentable {}
 @available(iOS 13.0, *)
 extension IBSKit.IBSRingProgressBarView.CapStyle : Swift.Equatable {}
 @available(iOS 13.0, *)

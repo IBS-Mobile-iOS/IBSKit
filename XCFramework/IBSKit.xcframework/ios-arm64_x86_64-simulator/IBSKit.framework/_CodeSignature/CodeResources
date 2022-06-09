@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IBSKit-Swift.h</key>
 		<data>
-		ySErZPgdod5hSaBQTVLqbadqmxg=
+		eM53RItvYJ9EVCiWCU73BfrHfEU=
 		</data>
 		<key>Headers/IBS_Kit.h</key>
 		<data>
@@ -18,35 +18,31 @@
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		B8iCbIOMRXy+XPIWUbLzR5/w80Y=
+		5VsqaFpFemBWAXmHayw5IyCvixc=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		43cKBAPxxZHgqIP56UPaJfp0g0g=
+		fT4K+q49f5vNDOdUPOv3hLQn8Xs=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		l0k2knbO/dnBo4RQvsANRRbYZdY=
+		FVtRDDB3e/bipkuSkC9YThQaV5o=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		G/kiB6eoYOgIrK3P5cx8BMmxQmo=
+		UOi7WlYbrzbRy4OXRzOVa60BW/E=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gEnq3BGQymLvaPsvG4XU45Vb7bg=
+		PONDehwA6s6rLkCNPyaE512sVBc=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zaQsWHp28xXyR9Hc0kuXt1fd5tU=
+		jWbKZGkgdOscYhaDL3nC4g2MQj0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		Uy4pyeJCKgMVkx+h2EXGmQMfZeg=
-		</data>
-		<key>To-Do List.rtf</key>
-		<data>
-		zp5ataa/apcG+tvDgoPbF4ZutU0=
 		</data>
 		<key>iPad11,1.plist</key>
 		<data>
@@ -383,7 +379,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tH1+2M3aS5PgLyZpyRM3upvc7tw32mW25a2HNMAc+ao=
+			s63nXHQJ0Fpg32ab9PlNOjBbig0tqCUnkZmH/4zhZ+U=
 			</data>
 		</dict>
 		<key>Headers/IBS_Kit.h</key>
@@ -397,42 +393,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a3hrt1ZErBU+SHP/VY0Ior6J26a9/wBA1A+/xMKO2AA=
+			EGug67KUWiUSzhBl83lxFNz0zwrLmuOtNJfQseh9Otg=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LN0EMQLuo6JmBNr4ielcJM5Yg76G6qc4BAHYVRfbIho=
+			b5Uo0Xse+i3sCNBPGoHBubuERNNXAl4edOaKhjq+ttU=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ww3wfhpKIySBSKkYKYku7D+x0AVZ/jnXOi4C9KloaKE=
+			jdfj+HV7mpYt2e9kim6l4j5C6udQY70/03Gq/6KyRQ8=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F7fxQBryi3M4zrcKLnrSEhSGysYoUV4OQyJ8lAcl70U=
+			Af92B4B7RRuuZxWm2How5IZ44ouJskfQ30q0pThbY5I=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k/5p1KADoP3n62+I9pzuiJPJvRCouft5xuWyvF55RcI=
+			XghsR4T7rtt6iDHOgBLR/py32qcrHLLojHBa8WMqkh8=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lFlBg3a0TUwAi1TAAJKf6RdhUDKUh+rqciSzA57wTrA=
+			n4O3ExiZdlSZWJear+HKYVA6sILWbROR/6LYvWdNEmc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -440,13 +436,6 @@
 			<key>hash2</key>
 			<data>
 			PnAJHyHEh0nFn/FXoUFGq3xo9Vngws2cUFywXMtqkxI=
-			</data>
-		</dict>
-		<key>To-Do List.rtf</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zZvts5JhVGLObtG61DdwQjLekAohQtZ6BWYbEal8D5I=
 			</data>
 		</dict>
 		<key>iPad11,1.plist</key>
