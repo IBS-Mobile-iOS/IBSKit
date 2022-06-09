@@ -198,6 +198,11 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
 #### Software
     
 ##### Split Space Controller
+
+<p align="center"> 
+ <img src="images/software/split-space-controller/ssc-iphone.png" width="696.6" height="430.6">
+</p>
+
 ##### Donut Chart View
 
 <p align="center"> 
