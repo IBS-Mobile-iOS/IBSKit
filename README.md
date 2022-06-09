@@ -199,7 +199,19 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
     
 ##### Split Space Controller
 ##### Donut Chart View
+
+<p align="center"> 
+ <img src="images/software/donut-chart-view/dcv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/donut-chart-view/dcv-2-iphone.png" width="292" height="553.5">
+</p>
+
 ##### Pie Chart View
+
+<p align="center"> 
+ <img src="images/software/pie-chart-view/pcv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/pie-chart-view/pcv-2-iphone.png" width="292" height="553.5">
+</p>
+
 ##### Progress Bar View
 ##### Ring Progress Bar View
 ##### Blur Visual FX View
