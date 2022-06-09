@@ -110,10 +110,7 @@ Wi-Fi: \(hardware.network.wifi)
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title =
-"""
-\(String(describing: IBSApp.self)) & \(String(describing: IBSSDK.self)) & \(String(describing: IBSDevice.self))
-"""
+        navigationItem.title = "\(IBSApp.self) & \(IBSSDK.self) & \(IBSDevice.self)"
 
         navigationController?.navigationBar.prefersLargeTitles = false
     }

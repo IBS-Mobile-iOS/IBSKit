@@ -79,7 +79,8 @@ final class DonutChartScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSDonutChartView.self)
+        navigationItem.title = "\(IBSDonutChartView.self)"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 

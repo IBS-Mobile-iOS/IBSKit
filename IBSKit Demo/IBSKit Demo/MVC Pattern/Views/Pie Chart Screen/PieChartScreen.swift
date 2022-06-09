@@ -77,7 +77,8 @@ final class PieChartScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSPieChartView.self)
+        navigationItem.title = "\(IBSPieChartView.self)"
+        
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
@@ -96,7 +97,6 @@ final class PieChartScreen: UIViewController {
         ])
     }
 }
-
 
 
 

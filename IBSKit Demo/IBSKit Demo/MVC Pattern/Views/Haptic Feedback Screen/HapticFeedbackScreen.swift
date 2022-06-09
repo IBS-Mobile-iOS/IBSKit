@@ -107,7 +107,8 @@ final class HapticFeedbackScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSHaptic.self)
+        navigationItem.title = "\(IBSHaptic.self)"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
@@ -138,8 +139,7 @@ final class HapticFeedbackScreen: UIViewController {
     @objc
     private func buttonsTouchDown(_ sender: UIButton) {
         UIView.animate(withDuration: 0.1, delay: .zero) {
-            sender.transform = CGAffineTransform(scaleX: 0.9,
-                                                 y: 0.9)
+            sender.transform = .init(scaleX: 0.9, y: 0.9)
         }
     }
 

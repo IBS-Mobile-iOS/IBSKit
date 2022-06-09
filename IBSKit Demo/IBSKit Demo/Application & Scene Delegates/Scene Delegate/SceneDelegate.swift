@@ -31,7 +31,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
 
         let viewController = PreviewBoothScreen()
+
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.view.backgroundColor = .systemBackground
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

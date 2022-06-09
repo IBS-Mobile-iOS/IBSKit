@@ -18,8 +18,9 @@ import Foundation
 public enum PreviewBoothAbilitiesList: Int, CaseIterable {
     case specification
     case hapticFeedback
-    case pieChartView
+    case splitSpaceController
     case donutChartView
+    case pieChartView
     case progressViews
     case blurVisualFXView
     case vibrancyVisualFXView

@@ -36,6 +36,7 @@ final class PreviewBoothScreen: UIViewController {
         super.viewDidLoad()
 
         setupAbilitiesListTableView()
+        
         setupNavigationController()
 
         setupViews()
@@ -57,6 +58,7 @@ final class PreviewBoothScreen: UIViewController {
 
     private func setupNavigationController() {
         navigationItem.title = "IBSKit Features Preview"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 

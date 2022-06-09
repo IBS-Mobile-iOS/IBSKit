@@ -60,7 +60,8 @@ final class ProgressViewsScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSRingProgressBarView.self)
+        navigationItem.title = "\(IBSPieChartView.self) & \(IBSRingProgressBarView.self)"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 

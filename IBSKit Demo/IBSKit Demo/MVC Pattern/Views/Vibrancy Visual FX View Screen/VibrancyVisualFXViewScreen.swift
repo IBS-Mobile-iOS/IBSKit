@@ -117,7 +117,8 @@ final class VibrancyVisualFXViewScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSVibrancyVisualFXView.self)
+        navigationItem.title = "\(IBSVibrancyVisualFXView.self)"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 

@@ -107,7 +107,8 @@ final class BlurVisualFXViewScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSBlurVisualFXView.self)
+        navigationItem.title = "\(IBSBlurVisualFXView.self)"
+        
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
