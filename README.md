@@ -18,7 +18,7 @@
 
 ### Current Release:
 **Status:** `Stable`  
-**Version:** `1.0.0`
+**Version:** `1.0.0`  
 **Build:** `25`
 
 #### IBSKit is an [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
@@ -81,6 +81,7 @@
 
 #### Used technologies
 
+`UIKit | CoreGraphics | CoreAnimation | NSLayoutConstaints / Frames` 
 
 - - -
 
@@ -88,9 +89,15 @@
 
 ###### *The patch version varies depending on the releases with bug fixes and errors.*
 
+The framework follows [Semantic Versioning](https://semver.org).
+
 #### Swift Package Manager
 
+You can install the framework using SPM by simply specifying a stable version of the release at the time of download.
+
 #### Another way
+
+You can also add a framework to the project by uploading the project from the github, transferring IBSKit.xcframework to the sidebar of the Xcode project.
 
 - - -
 
