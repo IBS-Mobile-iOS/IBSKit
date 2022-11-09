@@ -17,8 +17,9 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik&size=30&duration=3000&color=CFECE6&vCenter=true&lines=IBSKit+Swift+Package)](https://git.io/typing-svg)
 
 ### Current Release:
-**Status:** `Beta`  
+**Status:** `Stable`  
 **Version:** `1.0.0`
+**Build:** `25`
 
 #### IBSKit is an [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
@@ -43,12 +44,10 @@
     * [Haptic Feedback](#haptic-feedback)
   * [Software](#software)
     * [Split Space Controller](#split-space-controller)
-    * [Donut Chart View](#donut-chart-view)
-    * [Pie Chart View](#pie-chart-view)
-    * [Progress Bar View](#progress-bar-view)
-    * [Ring Progress Bar View](#ring-progress-bar-view)
-    * [Blur Visual FX View](#blur-visual-fx-view)
-    * [Vibrancy Visual FX View](#vibrancy-visual-fx-view)
+    * [Donut Chart](#donut-chart)
+    * [Pie Chart](#pie-chart)
+    * [Blur Visual FX](#blur-visual-fx)
+    * [Vibrancy Visual FX](#vibrancy-visual-fx)
 * **Availability**
   * [Supported devices](#supported-devices)
     * [iPod touch](#ipod-touch)
@@ -203,30 +202,28 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
  <img src="images/software/split-space-controller/ssc-iphone.png" width="696.6" height="430.6">
 </p>
 
-##### Donut Chart View
+##### Donut Chart
 
 <p align="center"> 
  <img src="images/software/donut-chart-view/dcv-1-iphone.png" width="292" height="553.5">
  <img src="images/software/donut-chart-view/dcv-2-iphone.png" width="292" height="553.5">
 </p>
 
-##### Pie Chart View
+##### Pie Chart
 
 <p align="center"> 
  <img src="images/software/pie-chart-view/pcv-1-iphone.png" width="292" height="553.5">
  <img src="images/software/pie-chart-view/pcv-2-iphone.png" width="292" height="553.5">
 </p>
 
-##### Progress Bar View
-##### Ring Progress Bar View
-##### Blur Visual FX View
+##### Blur Visual FX
 
 <p align="center"> 
  <img src="images/software/blur-vfx-view/bvfxv-1-iphone.png" width="292" height="553.5">
  <img src="images/software/blur-vfx-view/bvfxv-2-iphone.png" width="292" height="553.5">
 </p>
 
-##### Vibrancy Visual FX View
+##### Vibrancy Visual FX
 
 <p align="center"> 
  <img src="images/software/vibrancy-vfx-view/vvfxv-1-iphone.png" width="292" height="553.5">
