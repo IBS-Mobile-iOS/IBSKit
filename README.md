@@ -21,7 +21,7 @@
 **Version:** `1.0.0`  
 **Build:** `25`
 
-#### IBSKit is an [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
+#### IBSKit is an [Open Source](https://bb.ibs.ru/projects/MT/repos/ibs-software-development-kit/browse) [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
 #### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
 
