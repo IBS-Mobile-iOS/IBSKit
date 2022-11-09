@@ -16,13 +16,16 @@ import UIKit
 // MARK: - ApplicationDelegate
 
 @main
-class ApplicationDelegate: UIResponder, UIApplicationDelegate {
+final class ApplicationDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Public methods
-
+    
     func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool { true }
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        true
+    }
 
+    @available(iOS 13.0, *)
     func application(_ application: UIApplication,
                      configurationForConnecting connectingSceneSession: UISceneSession,
                      options: UIScene.ConnectionOptions) -> UISceneConfiguration {

@@ -16,16 +16,15 @@ import IBSKit
 
 // MARK: - PieChartScreen
 
-@available(iOS 13.0, *)
 final class PieChartScreen: UIViewController {
 
     // MARK: - Private properties
 
-    private let pieChartView: IBSPieChartView = {
-        let pieChartView = IBSPieChartView()
+    private let pieChartView: IBSPieChart = {
+        let pieChartView = IBSPieChart()
 
         pieChartView.total = .init(value: 30.0,
-                                   color: .link,
+                                   color: .blue,
                                    offset: 15.0)
 
         pieChartView.segments = [
@@ -77,12 +76,13 @@ final class PieChartScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSPieChartView.self)
+        navigationItem.title = "\(IBSPieChart.self)"
+        
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
 
         view.addSubview(pieChartView)
     }
@@ -99,7 +99,6 @@ final class PieChartScreen: UIViewController {
 
 
 
-
 // MARK: - Live Preview
 
 #if DEBUG && canImport(SwiftUI)
@@ -111,8 +110,8 @@ struct PieChartScreen_Preview: PreviewProvider {
     static var previews: some View {
         PieChartScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
     }

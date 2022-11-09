@@ -16,7 +16,6 @@ import IBSKit
 
 // MARK: - SpecificationsScreen
 
-@available(iOS 13.0, *)
 final class SpecificationsScreen: UIViewController {
 
     // MARK: - Private properties
@@ -25,7 +24,10 @@ final class SpecificationsScreen: UIViewController {
         let textView = UITextView()
 
         let appVersion = IBSApp.info.version
+        let appBuild = IBSApp.info.build
+        
         let sdkVersion = IBSSDK.info.version
+        let sdkBuild = IBSSDK.info.build
 
         let device = IBSDevice.current.device
         let operatingSystem = IBSDevice.current.operatingSystem
@@ -34,10 +36,10 @@ final class SpecificationsScreen: UIViewController {
 
         textView.text =
 """
-App Ver. \(appVersion.major).\(appVersion.minor).\(appVersion.patch) · Build \(IBSApp.info.build)
+App Ver. \(appVersion.major).\(appVersion.minor).\(appVersion.patch) · Build \(appBuild)
 
 
-SDK Ver. \(sdkVersion.major).\(sdkVersion.minor).\(sdkVersion.patch) · Build \(IBSSDK.info.build)
+SDK Ver. \(sdkVersion.major).\(sdkVersion.minor).\(sdkVersion.patch) · Build \(sdkBuild)
 
 
 Device Specification:
@@ -71,18 +73,20 @@ iBeacon: \(hardware.connectivity.iBeacon.rawValue)
 
 Hardware [IMU]:
 
-Accelerometer: \(hardware.imu.accelerometer)
-Barometer: \(hardware.imu.barometer)
-Gyroscope: \(hardware.imu.gyroscope)
-Magnetometer: \(hardware.imu.magnetometer)
+Accelerometer: \(hardware.imu.accelerometer.rawValue)
+Barometer: \(hardware.imu.barometer.rawValue)
+Gyroscope: \(hardware.imu.gyroscope.rawValue)
+Magnetometer: \(hardware.imu.magnetometer.rawValue)
 
 
 Hardware [Network]:
 
-Cellular: \(hardware.network.cellular)
-Wi-Fi: \(hardware.network.wifi)
+Cellular: \(hardware.network.cellular.rawValue)
+Wi-Fi: \(hardware.network.wifi.rawValue)
 """
         textView.font = .systemFont(ofSize: 20.0, weight: .regular)
+        textView.textColor = .white
+        textView.backgroundColor = .black
         textView.textAlignment = .center
         textView.isEditable = false
         textView.isUserInteractionEnabled = true
@@ -110,17 +114,14 @@ Wi-Fi: \(hardware.network.wifi)
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title =
-"""
-\(String(describing: IBSApp.self)) & \(String(describing: IBSSDK.self)) & \(String(describing: IBSDevice.self))
-"""
+        navigationItem.title = "\(IBSApp.self) & \(IBSSDK.self) & \(IBSDevice.self)"
 
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
-
+        view.backgroundColor = .black
+        
         view.addSubview(textView)
     }
 
@@ -147,8 +148,8 @@ struct SpecificationsScreen_Preview: PreviewProvider {
     static var previews: some View {
         SpecificationsScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
     }

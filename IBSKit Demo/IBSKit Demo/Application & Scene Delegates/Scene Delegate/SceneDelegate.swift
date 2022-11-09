@@ -15,7 +15,8 @@ import UIKit
 
 // MARK: - SceneDelegate
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+@available(iOS 13.0, *)
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     // MARK: - Public properties
 
@@ -31,7 +32,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
 
         let viewController = PreviewBoothScreen()
+
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.view.backgroundColor = .black
 
         window.rootViewController = navigationController
         window.makeKeyAndVisible()

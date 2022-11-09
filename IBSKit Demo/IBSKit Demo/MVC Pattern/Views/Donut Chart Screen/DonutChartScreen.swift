@@ -16,15 +16,14 @@ import IBSKit
 
 // MARK: - DonutChartScreen
 
-@available(iOS 13.0, *)
 final class DonutChartScreen: UIViewController {
 
     // MARK: - Private properties
 
-    private let donutChartView: IBSDonutChartView = {
-        let donutChartView = IBSDonutChartView()
+    private let donutChartView: IBSDonutChart = {
+        let donutChartView = IBSDonutChart()
 
-        donutChartView.total = .init(value: 30.0, color: .link, offset: 8.0)
+        donutChartView.total = .init(value: 30.0, color: .blue, offset: 8.0)
 
         donutChartView.width = 32.0
 
@@ -79,12 +78,13 @@ final class DonutChartScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = String(describing: IBSDonutChartView.self)
+        navigationItem.title = "\(IBSDonutChart.self)"
+
         navigationController?.navigationBar.prefersLargeTitles = false
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
 
         view.addSubview(donutChartView)
     }
@@ -112,8 +112,8 @@ struct DonutChartScreen_Preview: PreviewProvider {
     static var previews: some View {
         DonutChartScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
     }

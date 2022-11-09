@@ -32,12 +32,16 @@ extension PreviewBoothScreen: UITableViewDelegate {
             abilitiesViewController = SpecificationsScreen()
         case .hapticFeedback:
             abilitiesViewController = HapticFeedbackScreen()
+        case .splitSpaceController:
+            abilitiesViewController = SplitSpaceScreen()
         case .pieChartView:
             abilitiesViewController = PieChartScreen()
         case .donutChartView:
             abilitiesViewController = DonutChartScreen()
-        case .progressViews:
-            abilitiesViewController = ProgressViewsScreen()
+        case .progressBarView:
+            abilitiesViewController = ProgressBarScreen()
+        case .ringProgressBarView:
+            abilitiesViewController = RingProgressBarScreen()
         case .blurVisualFXView:
             abilitiesViewController = BlurVisualFXViewScreen()
         case .vibrancyVisualFXView:
@@ -72,25 +76,24 @@ extension PreviewBoothScreen: UITableViewDataSource {
 
         switch currentAbility {
         case .specification:
-            cell.textLabel?.text =
-"""
-\(String(describing: IBSApp.self)) & \(String(describing: IBSSDK.self)) & \(String(describing: IBSDevice.self))
-"""
+            cell.textLabel?.text = "\(IBSApp.self) & \(IBSSDK.self) & \(IBSDevice.self)"
         case .hapticFeedback:
-            cell.textLabel?.text = String(describing: IBSHaptic.self)
+            cell.textLabel?.text = "\(IBSHaptic.self)"
+        case .splitSpaceController:
+            cell.textLabel?.text = "\(IBSSplitSpaceController.self)"
         case .pieChartView:
-            cell.textLabel?.text = String(describing: IBSPieChartView.self)
+            cell.textLabel?.text = "\(IBSPieChart.self)"
         case .donutChartView:
-            cell.textLabel?.text = String(describing: IBSDonutChartView.self)
-        case .progressViews:
-            cell.textLabel?.text =
-"""
-\(String(describing: IBSProgressBarView.self)) & \(String(describing: IBSRingProgressBarView.self))
-"""
+            cell.textLabel?.text = "\(IBSDonutChart.self)"
+        case .progressBarView:
+            cell.textLabel?.text = "\(IBSProgressBarView.self)"
+        case .ringProgressBarView:
+            cell.textLabel?.text = "\(IBSRingProgressBarView.self)"
         case .blurVisualFXView:
-            cell.textLabel?.text = String(describing: IBSBlurVisualFXView.self)
+            cell.textLabel?.text = "\(IBSBlurVisualFX.self)"
         case .vibrancyVisualFXView:
-            cell.textLabel?.text = String(describing: IBSVibrancyVisualFXView.self)
+//            cell.textLabel?.text = "\(IBSVibrancyVisualFXView.self)"
+            cell.textLabel?.text = "IBSVibrancyVisualFXView"
         }
 
         return cell

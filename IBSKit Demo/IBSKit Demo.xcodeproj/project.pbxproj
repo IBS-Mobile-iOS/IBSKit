@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B41B96FA2850AEC80060C6DB /* SplitSpaceScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */; };
+		B41B97002850B3B70060C6DB /* LeftSideScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */; };
+		B41B97022850B3C00060C6DB /* RightSideScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41B97012850B3C00060C6DB /* RightSideScreen.swift */; };
+		B43694602892834C000761B6 /* ApplicationImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B436945F2892834C000761B6 /* ApplicationImages.xcassets */; };
+		B436946D2897C87B000761B6 /* DonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B436946C2897C87B000761B6 /* DonutChartView.swift */; };
 		B455FE8C284E63F500784258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B455FE8A284E63F500784258 /* LaunchScreen.storyboard */; };
 		B455FE99284E652100784258 /* IBSKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B455FE98284E652100784258 /* IBSKit.xcframework */; };
 		B455FE9A284E652100784258 /* IBSKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B455FE98284E652100784258 /* IBSKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -15,7 +20,6 @@
 		B455FEA5284E65A500784258 /* PreviewBoothAbilitiesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEA4284E65A500784258 /* PreviewBoothAbilitiesList.swift */; };
 		B455FEA8284E65C700784258 /* VibrancyVisualFXViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEA7284E65C700784258 /* VibrancyVisualFXViewScreen.swift */; };
 		B455FEAB284E661500784258 /* BlurVisualFXViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEAA284E661500784258 /* BlurVisualFXViewScreen.swift */; };
-		B455FEAE284E663B00784258 /* ProgressViewsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEAD284E663B00784258 /* ProgressViewsScreen.swift */; };
 		B455FEB1284E665A00784258 /* DonutChartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEB0284E665A00784258 /* DonutChartScreen.swift */; };
 		B455FEB4284E668400784258 /* PieChartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEB3284E668400784258 /* PieChartScreen.swift */; };
 		B455FEB7284E66A400784258 /* HapticFeedbackScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455FEB6284E66A400784258 /* HapticFeedbackScreen.swift */; };
@@ -25,6 +29,10 @@
 		B455FEC4284E673A00784258 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B455FEC3284E673A00784258 /* MainScreen.storyboard */; };
 		B455FEC9284E679D00784258 /* ApplicationsColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B455FEC8284E679D00784258 /* ApplicationsColors.xcassets */; };
 		B455FECE284E67C700784258 /* ApplicationIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B455FECD284E67C700784258 /* ApplicationIcons.xcassets */; };
+		B4E445BB28532BC60060B19A /* RingProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E445BA28532BC60060B19A /* RingProgressBarScreen.swift */; };
+		B4E445BE28533E4A0060B19A /* ProgressBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E445BD28533E4A0060B19A /* ProgressBarScreen.swift */; };
+		B4E445C028533F730060B19A /* RingProgressBarScreenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E445BF28533F730060B19A /* RingProgressBarScreenExtensions.swift */; };
+		B4E99BE728831679006BD816 /* IBSViewRedrawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E99BE628831679006BD816 /* IBSViewRedrawable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +50,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSpaceScreen.swift; sourceTree = "<group>"; };
+		B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideScreen.swift; sourceTree = "<group>"; };
+		B41B97012850B3C00060C6DB /* RightSideScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightSideScreen.swift; sourceTree = "<group>"; };
+		B436945F2892834C000761B6 /* ApplicationImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ApplicationImages.xcassets; sourceTree = "<group>"; };
+		B436946C2897C87B000761B6 /* DonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChartView.swift; sourceTree = "<group>"; };
 		B455FE7C284E63F500784258 /* IBSKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBSKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B455FE8B284E63F500784258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B455FE8D284E63F500784258 /* ApplicationInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApplicationInfo.plist; sourceTree = "<group>"; };
@@ -51,7 +64,6 @@
 		B455FEA4284E65A500784258 /* PreviewBoothAbilitiesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBoothAbilitiesList.swift; sourceTree = "<group>"; };
 		B455FEA7284E65C700784258 /* VibrancyVisualFXViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrancyVisualFXViewScreen.swift; sourceTree = "<group>"; };
 		B455FEAA284E661500784258 /* BlurVisualFXViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurVisualFXViewScreen.swift; sourceTree = "<group>"; };
-		B455FEAD284E663B00784258 /* ProgressViewsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewsScreen.swift; sourceTree = "<group>"; };
 		B455FEB0284E665A00784258 /* DonutChartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChartScreen.swift; sourceTree = "<group>"; };
 		B455FEB3284E668400784258 /* PieChartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartScreen.swift; sourceTree = "<group>"; };
 		B455FEB6284E66A400784258 /* HapticFeedbackScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackScreen.swift; sourceTree = "<group>"; };
@@ -61,6 +73,10 @@
 		B455FEC3284E673A00784258 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 		B455FEC8284E679D00784258 /* ApplicationsColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ApplicationsColors.xcassets; sourceTree = "<group>"; };
 		B455FECD284E67C700784258 /* ApplicationIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ApplicationIcons.xcassets; sourceTree = "<group>"; };
+		B4E445BA28532BC60060B19A /* RingProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreen.swift; sourceTree = "<group>"; };
+		B4E445BD28533E4A0060B19A /* ProgressBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarScreen.swift; sourceTree = "<group>"; };
+		B4E445BF28533F730060B19A /* RingProgressBarScreenExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressBarScreenExtensions.swift; sourceTree = "<group>"; };
+		B4E99BE628831679006BD816 /* IBSViewRedrawable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBSViewRedrawable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +91,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B41B96F82850AE8A0060C6DB /* Split Space Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B41B96FF2850B3B70060C6DB /* LeftSideScreen.swift */,
+				B41B97012850B3C00060C6DB /* RightSideScreen.swift */,
+				B41B96F92850AEC80060C6DB /* SplitSpaceScreen.swift */,
+			);
+			path = "Split Space Screen";
+			sourceTree = "<group>";
+		};
+		B436945E28928332000761B6 /* Application Images */ = {
+			isa = PBXGroup;
+			children = (
+				B436945F2892834C000761B6 /* ApplicationImages.xcassets */,
+			);
+			path = "Application Images";
+			sourceTree = "<group>";
+		};
+		B43694692897C858000761B6 /* Chart Views */ = {
+			isa = PBXGroup;
+			children = (
+				B436946A2897C863000761B6 /* Donut Chart View */,
+			);
+			path = "Chart Views";
+			sourceTree = "<group>";
+		};
+		B436946A2897C863000761B6 /* Donut Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				B436946B2897C86E000761B6 /* Donut Chart Views */,
+			);
+			path = "Donut Chart View";
+			sourceTree = "<group>";
+		};
+		B436946B2897C86E000761B6 /* Donut Chart Views */ = {
+			isa = PBXGroup;
+			children = (
+				B436946C2897C87B000761B6 /* DonutChartView.swift */,
+			);
+			path = "Donut Chart Views";
+			sourceTree = "<group>";
+		};
 		B455FE73284E63F500784258 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +200,7 @@
 			children = (
 				B455FEA3284E659300784258 /* Models */,
 				B455FEA2284E658D00784258 /* Views */,
+				B4E445B7285291840060B19A /* Controllers */,
 			);
 			path = "MVC Pattern";
 			sourceTree = "<group>";
@@ -152,9 +211,10 @@
 				B455FEBB284E66CE00784258 /* Preview Booth Screen */,
 				B455FEB8284E66BD00784258 /* Specifications Screen */,
 				B455FEB5284E669A00784258 /* Haptic Feedback Screen */,
-				B455FEB2284E667900784258 /* Pie Chart Screen */,
+				B41B96F82850AE8A0060C6DB /* Split Space Screen */,
 				B455FEAF284E665500784258 /* Donut Chart Screen */,
-				B455FEAC284E663200784258 /* Progress Views Screen */,
+				B455FEB2284E667900784258 /* Pie Chart Screen */,
+				B4E445BC28533CA00060B19A /* Progress Bar Screens */,
 				B455FEA9284E660300784258 /* Blur Visual FX View Screen */,
 				B455FEA6284E65C000784258 /* Vibrancy Visual FX View Screen */,
 			);
@@ -183,14 +243,6 @@
 				B455FEAA284E661500784258 /* BlurVisualFXViewScreen.swift */,
 			);
 			path = "Blur Visual FX View Screen";
-			sourceTree = "<group>";
-		};
-		B455FEAC284E663200784258 /* Progress Views Screen */ = {
-			isa = PBXGroup;
-			children = (
-				B455FEAD284E663B00784258 /* ProgressViewsScreen.swift */,
-			);
-			path = "Progress Views Screen";
 			sourceTree = "<group>";
 		};
 		B455FEAF284E665500784258 /* Donut Chart Screen */ = {
@@ -272,6 +324,7 @@
 			children = (
 				B455FEC7284E678F00784258 /* Application Colors */,
 				B455FECC284E67BA00784258 /* Application Icons */,
+				B436945E28928332000761B6 /* Application Images */,
 			);
 			path = "Application Graphics & Media Content";
 			sourceTree = "<group>";
@@ -290,6 +343,49 @@
 				B455FECD284E67C700784258 /* ApplicationIcons.xcassets */,
 			);
 			path = "Application Icons";
+			sourceTree = "<group>";
+		};
+		B4E445B7285291840060B19A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B4E445B828532B9C0060B19A /* Ring Progress Bar Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B4E445BA28532BC60060B19A /* RingProgressBarScreen.swift */,
+				B4E445BF28533F730060B19A /* RingProgressBarScreenExtensions.swift */,
+			);
+			path = "Ring Progress Bar Screen";
+			sourceTree = "<group>";
+		};
+		B4E445B928532BAB0060B19A /* Progress Bar Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B4E445BD28533E4A0060B19A /* ProgressBarScreen.swift */,
+			);
+			path = "Progress Bar Screen";
+			sourceTree = "<group>";
+		};
+		B4E445BC28533CA00060B19A /* Progress Bar Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B4E99BE328831182006BD816 /* Views */,
+				B4E445B928532BAB0060B19A /* Progress Bar Screen */,
+				B4E445B828532B9C0060B19A /* Ring Progress Bar Screen */,
+			);
+			path = "Progress Bar Screens";
+			sourceTree = "<group>";
+		};
+		B4E99BE328831182006BD816 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4E99BE628831679006BD816 /* IBSViewRedrawable.swift */,
+				B43694692897C858000761B6 /* Chart Views */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +453,7 @@
 				B455FE8C284E63F500784258 /* LaunchScreen.storyboard in Resources */,
 				B455FEC4284E673A00784258 /* MainScreen.storyboard in Resources */,
 				B455FECE284E67C700784258 /* ApplicationIcons.xcassets in Resources */,
+				B43694602892834C000761B6 /* ApplicationImages.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,18 +464,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B436946D2897C87B000761B6 /* DonutChartView.swift in Sources */,
+				B41B96FA2850AEC80060C6DB /* SplitSpaceScreen.swift in Sources */,
 				B455FEA8284E65C700784258 /* VibrancyVisualFXViewScreen.swift in Sources */,
 				B455FEBF284E66F300784258 /* PreviewBoothScreen.swift in Sources */,
 				B455FEA5284E65A500784258 /* PreviewBoothAbilitiesList.swift in Sources */,
 				B455FE9D284E653900784258 /* ApplicationDelegate.swift in Sources */,
 				B455FEA0284E655D00784258 /* SceneDelegate.swift in Sources */,
+				B4E99BE728831679006BD816 /* IBSViewRedrawable.swift in Sources */,
+				B41B97022850B3C00060C6DB /* RightSideScreen.swift in Sources */,
 				B455FEAB284E661500784258 /* BlurVisualFXViewScreen.swift in Sources */,
 				B455FEB1284E665A00784258 /* DonutChartScreen.swift in Sources */,
 				B455FEB7284E66A400784258 /* HapticFeedbackScreen.swift in Sources */,
-				B455FEAE284E663B00784258 /* ProgressViewsScreen.swift in Sources */,
+				B4E445BB28532BC60060B19A /* RingProgressBarScreen.swift in Sources */,
 				B455FEB4284E668400784258 /* PieChartScreen.swift in Sources */,
+				B4E445BE28533E4A0060B19A /* ProgressBarScreen.swift in Sources */,
 				B455FEBD284E66E400784258 /* PreviewBoothScreenExtensions.swift in Sources */,
 				B455FEBA284E66C000784258 /* SpecificationsScreen.swift in Sources */,
+				B4E445C028533F730060B19A /* RingProgressBarScreenExtensions.swift in Sources */,
+				B41B97002850B3B70060C6DB /* LeftSideScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +550,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -500,7 +604,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

@@ -16,6 +16,11 @@
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rubik&size=30&duration=3000&color=CFECE6&vCenter=true&lines=IBSKit+Swift+Package)](https://git.io/typing-svg)
 
+### Current Release:
+**Status:** `Stable`  
+**Version:** `1.0.0`  
+**Build:** `25`
+
 #### IBSKit is an [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
 #### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
@@ -39,12 +44,10 @@
     * [Haptic Feedback](#haptic-feedback)
   * [Software](#software)
     * [Split Space Controller](#split-space-controller)
-    * [Pie Chart View](#pie-chart-view)
-    * [Donut Chart View](#donut-chart-view)
-    * [Progress Bar View](#progress-bar-view)
-    * [Ring Progress Bar View](#ring-progress-bar-view)
-    * [Blur Visual FX View](#blur-visual-fx-view)
-    * [Vibrancy Visual FX View](#vibrancy-visual-fx-view)
+    * [Donut Chart](#donut-chart)
+    * [Pie Chart](#pie-chart)
+    * [Blur Visual FX](#blur-visual-fx)
+    * [Vibrancy Visual FX](#vibrancy-visual-fx)
 * **Availability**
   * [Supported devices](#supported-devices)
     * [iPod touch](#ipod-touch)
@@ -78,6 +81,7 @@
 
 #### Used technologies
 
+`UIKit | CoreGraphics | CoreAnimation | NSLayoutConstaints / Frames` 
 
 - - -
 
@@ -85,9 +89,15 @@
 
 ###### *The patch version varies depending on the releases with bug fixes and errors.*
 
+The framework follows [Semantic Versioning](https://semver.org).
+
 #### Swift Package Manager
 
+You can install the framework using SPM by simply specifying a stable version of the release at the time of download.
+
 #### Another way
+
+You can also add a framework to the project by uploading the project from the github, transferring IBSKit.xcframework to the sidebar of the Xcode project.
 
 - - -
 
@@ -141,14 +151,20 @@ Where `ClassName` is the name of your UIViewController or UIView class successor
 To get information about the version and build of the application or framework, use:
 
 ```swift
-IBSApp.info.version
-IBSApp.info.build
+let appVersion = IBSApp.info.version
+print(appVersion)
+
+let appBuild = IBSApp.info.build
+print(appBuild)
 ```
 or 
 
 ```swift
-IBSSDK.info.version
-IBSSDK.info.build
+let sdkVersion = IBSSDK.info.version
+print(sdkVersion)
+
+let sdkBuild = IBSSDK.info.build
+print(sdkBuild)
 ```
 
 <p align="center"> 
@@ -159,10 +175,10 @@ IBSSDK.info.build
 
 ##### Haptic Feedback
 
-Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement tactile recoil, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method:
+Allows you to use the  Taptic Engine without using wrappers to reconciliate the device type, and also supports multithreading by default. To implement taptic feedback, it is enough to refer to the `execute(with: IBSHaptic.FeedbackType)` method. For example:
 
 ```swift
-IBSHaptic.feedback.execute(with: IBSHaptic.FeedbackType)
+IBSHaptic.feedback.execute(with: .success)
 ```
 
 Where `IBSHaptic.FeedbackType` is an enumeration that provides haptic feedback types.
@@ -188,12 +204,38 @@ public enum IBSHaptic.FeedbackType: String, CaseIterable {
 #### Software
     
 ##### Split Space Controller
-##### Pie Chart View
-##### Donut Chart View
-##### Progress Bar View
-##### Ring Progress Bar View
-##### Blur Visual FX View
-##### Vibrancy Visual FX View
+
+<p align="center"> 
+ <img src="images/software/split-space-controller/ssc-iphone.png" width="696.6" height="430.6">
+</p>
+
+##### Donut Chart
+
+<p align="center"> 
+ <img src="images/software/donut-chart-view/dcv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/donut-chart-view/dcv-2-iphone.png" width="292" height="553.5">
+</p>
+
+##### Pie Chart
+
+<p align="center"> 
+ <img src="images/software/pie-chart-view/pcv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/pie-chart-view/pcv-2-iphone.png" width="292" height="553.5">
+</p>
+
+##### Blur Visual FX
+
+<p align="center"> 
+ <img src="images/software/blur-vfx-view/bvfxv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/blur-vfx-view/bvfxv-2-iphone.png" width="292" height="553.5">
+</p>
+
+##### Vibrancy Visual FX
+
+<p align="center"> 
+ <img src="images/software/vibrancy-vfx-view/vvfxv-1-iphone.png" width="292" height="553.5">
+ <img src="images/software/vibrancy-vfx-view/vvfxv-2-iphone.png" width="292" height="553.5">
+</p>
 
 - - -
 
