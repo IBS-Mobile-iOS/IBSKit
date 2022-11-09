@@ -15,21 +15,22 @@ import UIKit
 
 // MARK: - PreviewBoothScreen
 
-@available(iOS 13.0, *)
 final class PreviewBoothScreen: UIViewController {
 
     // MARK: - Private properties
 
     private let abilitiesListTableView: UITableView = {
         let tableView = UITableView(frame: .zero,
-                                    style: .insetGrouped)
+                                    style: .grouped)
+        tableView.backgroundColor = .black
         tableView.isUserInteractionEnabled = true
         tableView.clipsToBounds = true
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
-
-
+    
+    
+    
     // MARK: - Overriding parent methods
 
     override func viewDidLoad() {
@@ -63,7 +64,7 @@ final class PreviewBoothScreen: UIViewController {
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
 
         view.addSubview(abilitiesListTableView)
     }
@@ -91,8 +92,8 @@ struct PreviewBoothScreen_Preview: PreviewProvider {
     static var previews: some View {
         PreviewBoothScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
     }

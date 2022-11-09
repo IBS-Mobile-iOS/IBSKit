@@ -15,7 +15,6 @@ import UIKit
 
 // MARK: - RightSideScreen
 
-@available(iOS 13.0, *)
 final class RightSideScreen: UIViewController {
 
     // MARK: - Private properties
@@ -25,8 +24,8 @@ final class RightSideScreen: UIViewController {
             UIImageView(),
             UIImageView()
         ]
-        imageViews[0].image = UIImage(systemName: "arrow.left")
-        imageViews[1].image = UIImage(systemName: "arrow.right")
+        imageViews[0].image = .init(named: "arrow.left")
+        imageViews[1].image = .init(named: "arrow.right")
         imageViews.forEach { imageView in
             imageView.tintColor = .white
             imageView.contentMode = .scaleAspectFit
@@ -47,6 +46,7 @@ final class RightSideScreen: UIViewController {
         labels.forEach { label in
             label.baselineAdjustment = .alignCenters
             label.textAlignment = .left
+            label.textColor = .white
             label.isUserInteractionEnabled = false
             label.clipsToBounds = true
             label.translatesAutoresizingMaskIntoConstraints = false
@@ -141,8 +141,8 @@ struct RightSideScreen_Preview: PreviewProvider {
     static var previews: some View {
         RightSideScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .previewInterfaceOrientation(.landscapeRight)
             .preferredColorScheme(.dark)
             .ignoresSafeArea()

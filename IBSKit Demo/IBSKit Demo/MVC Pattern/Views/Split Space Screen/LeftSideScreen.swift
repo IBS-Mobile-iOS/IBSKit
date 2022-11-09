@@ -15,7 +15,6 @@ import UIKit
 
 // MARK: - LeftSideScreen
 
-@available(iOS 13.0, *)
 final class LeftSideScreen: UIViewController {
 
     // MARK: - Private properties
@@ -23,7 +22,7 @@ final class LeftSideScreen: UIViewController {
     private let resizableView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 20.0
-        view.backgroundColor = .systemGray4
+        view.backgroundColor = .gray
         view.isUserInteractionEnabled = false
         view.clipsToBounds = false
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -53,7 +52,7 @@ final class LeftSideScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupViews() {
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .gray
 
         view.addSubview(resizableView)
     }
@@ -81,8 +80,8 @@ struct LeftSideScreen_Preview: PreviewProvider {
     static var previews: some View {
         LeftSideScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .previewInterfaceOrientation(.landscapeRight)
             .preferredColorScheme(.dark)
             .ignoresSafeArea()

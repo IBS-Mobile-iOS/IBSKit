@@ -38,8 +38,10 @@ extension PreviewBoothScreen: UITableViewDelegate {
             abilitiesViewController = PieChartScreen()
         case .donutChartView:
             abilitiesViewController = DonutChartScreen()
-        case .progressViews:
-            abilitiesViewController = ProgressViewsScreen()
+        case .progressBarView:
+            abilitiesViewController = ProgressBarScreen()
+        case .ringProgressBarView:
+            abilitiesViewController = RingProgressBarScreen()
         case .blurVisualFXView:
             abilitiesViewController = BlurVisualFXViewScreen()
         case .vibrancyVisualFXView:
@@ -80,15 +82,18 @@ extension PreviewBoothScreen: UITableViewDataSource {
         case .splitSpaceController:
             cell.textLabel?.text = "\(IBSSplitSpaceController.self)"
         case .pieChartView:
-            cell.textLabel?.text = "\(IBSPieChartView.self)"
+            cell.textLabel?.text = "\(IBSPieChart.self)"
         case .donutChartView:
-            cell.textLabel?.text = "\(IBSDonutChartView.self)"
-        case .progressViews:
-            cell.textLabel?.text = "\(IBSProgressBarView.self) & \(IBSRingProgressBarView.self)"
+            cell.textLabel?.text = "\(IBSDonutChart.self)"
+        case .progressBarView:
+            cell.textLabel?.text = "\(IBSProgressBarView.self)"
+        case .ringProgressBarView:
+            cell.textLabel?.text = "\(IBSRingProgressBarView.self)"
         case .blurVisualFXView:
-            cell.textLabel?.text = "\(IBSBlurVisualFXView.self)"
+            cell.textLabel?.text = "\(IBSBlurVisualFX.self)"
         case .vibrancyVisualFXView:
-            cell.textLabel?.text = "\(IBSVibrancyVisualFXView.self)"
+//            cell.textLabel?.text = "\(IBSVibrancyVisualFXView.self)"
+            cell.textLabel?.text = "IBSVibrancyVisualFXView"
         }
 
         return cell

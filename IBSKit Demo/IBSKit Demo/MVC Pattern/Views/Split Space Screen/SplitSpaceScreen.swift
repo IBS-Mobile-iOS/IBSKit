@@ -16,7 +16,6 @@ import IBSKit
 
 // MARK: - SplitSpaceScreen
 
-@available(iOS 13.0, *)
 final class SplitSpaceScreen: IBSSplitSpaceController {
 
     // MARK: - Public properties
@@ -45,7 +44,9 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
 
         setupSplitSpaceController()
     }
-
+    
+    
+    
     // MARK: - Overriding parent methods
 
     override func viewDidLoad() {
@@ -74,7 +75,7 @@ final class SplitSpaceScreen: IBSSplitSpaceController {
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
     }
 
     private func setupSwipeGestureRecognizer() {
@@ -108,8 +109,8 @@ struct SplitSpaceScreen_Preview: PreviewProvider {
     static var previews: some View {
         SplitSpaceScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .previewInterfaceOrientation(.landscapeRight)
             .preferredColorScheme(.dark)
             .ignoresSafeArea()

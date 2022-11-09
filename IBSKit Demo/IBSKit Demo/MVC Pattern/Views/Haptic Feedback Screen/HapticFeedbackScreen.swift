@@ -16,38 +16,41 @@ import IBSKit
 
 // MARK: - HapticFeedbackScreen
 
-@available(iOS 13.0, *)
 final class HapticFeedbackScreen: UIViewController {
 
     // MARK: - Private properties
 
     private lazy var buttons: [UIButton] = {
         var buttons: [UIButton] = []
-        IBSHaptic.FeedbackType.allCases.forEach { _ in
-            buttons.append(UIButton(type: .custom))
-        }
-        IBSHaptic.FeedbackType.allCases.enumerated().forEach { (index, feedbackType) in
-            buttons[index].setTitle(feedbackType.rawValue,
-                                    for: .normal)
-            buttons[index].setTitleColor(.white,
-                                         for: .normal)
-            buttons[index].titleLabel?.font = .systemFont(ofSize: 20.0,
-                                                          weight: .medium)
-            buttons[index].backgroundColor = .link
-            buttons[index].layer.cornerRadius = 14.0
-            buttons[index].addTarget(self,
-                                     action: #selector(self.buttonsTouchDown(_:)),
-                                     for: .touchDown)
-            buttons[index].addTarget(self,
-                                     action: #selector(self.buttonsTouchUpInside(_:)),
-                                     for: .touchUpInside)
-            buttons[index].addTarget(self,
-                                     action: #selector(self.buttonsTouchUpOutside(_:)),
-                                     for: .touchUpOutside)
-            buttons[index].isUserInteractionEnabled = true
-            buttons[index].clipsToBounds = true
-            buttons[index].translatesAutoresizingMaskIntoConstraints = false
-        }
+        IBSHaptic.FeedbackType.allCases
+            .forEach { feedbackType in
+                let button = UIButton(type: .custom)
+                
+                button.setTitle(feedbackType.rawValue,
+                                for: .normal)
+                button.setTitleColor(.white,
+                                     for: .normal)
+                button.titleLabel?.font = .systemFont(ofSize: 20.0,
+                                                      weight: .medium)
+                button.backgroundColor = .blue
+                button.layer.cornerRadius = 14.0
+                
+                button.addTarget(self,
+                                 action: #selector(self.buttonsTouchDown(_:)),
+                                 for: .touchDown)
+                button.addTarget(self,
+                                 action: #selector(self.buttonsTouchUpInside(_:)),
+                                 for: .touchUpInside)
+                button.addTarget(self,
+                                 action: #selector(self.buttonsTouchUpOutside(_:)),
+                                 for: .touchUpOutside)
+                
+                button.isUserInteractionEnabled = true
+                button.clipsToBounds = true
+                button.translatesAutoresizingMaskIntoConstraints = false
+
+                buttons.append(button)
+            }
         return buttons
     }()
 
@@ -113,7 +116,7 @@ final class HapticFeedbackScreen: UIViewController {
     }
 
     private func setupViews() {
-        view.backgroundColor = .systemBackground
+        view.backgroundColor = .black
 
         view.addSubview(mainStackView)
     }
@@ -148,6 +151,7 @@ final class HapticFeedbackScreen: UIViewController {
         UIView.animate(withDuration: 0.1, delay: .zero) {
             sender.transform = .identity
         }
+        
         IBSHaptic.feedback.execute(with: .init(rawValue: (sender.titleLabel?.text)!) ?? .error)
     }
 
@@ -172,8 +176,8 @@ struct HapticFeedbackScreen_Preview: PreviewProvider {
     static var previews: some View {
         HapticFeedbackScreen()
             .livePreview()
-            .previewDisplayName("iPhone 13 Pro Max")
-            .previewDevice("iPhone 13 Pro Max")
+            .previewDisplayName("iPhone 12 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
             .preferredColorScheme(.dark)
             .ignoresSafeArea()
     }

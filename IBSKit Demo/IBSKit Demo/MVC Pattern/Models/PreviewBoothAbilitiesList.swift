@@ -21,7 +21,8 @@ public enum PreviewBoothAbilitiesList: Int, CaseIterable {
     case splitSpaceController
     case donutChartView
     case pieChartView
-    case progressViews
+    case progressBarView
+    case ringProgressBarView
     case blurVisualFXView
     case vibrancyVisualFXView
 }

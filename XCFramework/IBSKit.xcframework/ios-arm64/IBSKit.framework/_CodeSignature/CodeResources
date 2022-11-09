@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/IBSKit-Swift.h</key>
 		<data>
-		1lUlOb+n6IXhKZ72ZF5FcqRxub4=
+		mZrY9x2bJo6kzvWan/RnMviSaV0=
 		</data>
 		<key>Headers/IBS_Kit.h</key>
 		<data>
@@ -14,19 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JATejgOQya2LmG9SqyCEClA+84w=
+		wBpz+E8dKo/okpOE2ye2rfEdj8M=
+		</data>
+		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		y+S3LlRZ3aXJ1uLcQZhmdvP46OM=
+		</data>
+		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		iKLbF3zXFAnFlYGwP8nhFEmQH/8=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Rw6Tgy4rNwz9yWFBIaUpd2/8oGM=
+		6HlQ1NR574sn1PnSiQQvZ/y/Xv8=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		t/EPzQxSkQI3Hp74dPhM7cdyHkg=
+		iKLbF3zXFAnFlYGwP8nhFEmQH/8=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2ouy0ar1AiHGAJX/CssnIpcoxr0=
+		jDs74VPqD0LEt28PeCvt1vjZjAQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,6 +92,14 @@
 		<data>
 		LNIkZxZaHuya4eWtEsHO2lbWJOg=
 		</data>
+		<key>iPad13,18.plist</key>
+		<data>
+		qNqDj6+SpMqZXEyIiiK8MYOJK/M=
+		</data>
+		<key>iPad13,19.plist</key>
+		<data>
+		XeC3pbK90cVgbNhOUS7Hyr2IQxk=
+		</data>
 		<key>iPad13,2.plist</key>
 		<data>
 		w9FvnIPhqtk72NiUA5NOjnXW71Q=
@@ -119,6 +135,38 @@
 		<key>iPad14,2.plist</key>
 		<data>
 		rtju6OR1L6WcYDyqCNE1HfCD94w=
+		</data>
+		<key>iPad14,3-A.plist</key>
+		<data>
+		dtGYo2cIZmb7SN8zqRrM1GnPMPw=
+		</data>
+		<key>iPad14,3-B.plist</key>
+		<data>
+		dtGYo2cIZmb7SN8zqRrM1GnPMPw=
+		</data>
+		<key>iPad14,4-A.plist</key>
+		<data>
+		+6iZoN/2lYYGG2bere1jaKetiY0=
+		</data>
+		<key>iPad14,4-B.plist</key>
+		<data>
+		+6iZoN/2lYYGG2bere1jaKetiY0=
+		</data>
+		<key>iPad14,5-A.plist</key>
+		<data>
+		Kptm3W+sUr/hg6X2lFEQw7oHY60=
+		</data>
+		<key>iPad14,5-B.plist</key>
+		<data>
+		Kptm3W+sUr/hg6X2lFEQw7oHY60=
+		</data>
+		<key>iPad14,6-A.plist</key>
+		<data>
+		qhXfjeGzGfsR1u0sKD4qQF5Zec8=
+		</data>
+		<key>iPad14,6-B.plist</key>
+		<data>
+		qhXfjeGzGfsR1u0sKD4qQF5Zec8=
 		</data>
 		<key>iPad5,1.plist</key>
 		<data>
@@ -268,6 +316,10 @@
 		<data>
 		pz4UGalU/M/LO6dTaFwPq0U3YA8=
 		</data>
+		<key>iPhone11,4.plist</key>
+		<data>
+		sr6WON90KHi0ylFrXIEyjvys0Os=
+		</data>
 		<key>iPhone11,6.plist</key>
 		<data>
 		sr6WON90KHi0ylFrXIEyjvys0Os=
@@ -328,6 +380,22 @@
 		<data>
 		PKqYzH53qRzKyG253EUNEL5S5vo=
 		</data>
+		<key>iPhone14,7.plist</key>
+		<data>
+		X4g4yAI8ENvP8vYh9hgkk10xrQs=
+		</data>
+		<key>iPhone14,8.plist</key>
+		<data>
+		gU9OWHkoFD3E6IOpoVqYnwVByn0=
+		</data>
+		<key>iPhone15,2.plist</key>
+		<data>
+		YKT6ZoM5YNgmzJRXSNZe6rrNhdg=
+		</data>
+		<key>iPhone15,3.plist</key>
+		<data>
+		ET/O6y39SAy6KGJ4Lov64TP+rG4=
+		</data>
 		<key>iPhone8,1.plist</key>
 		<data>
 		u1lFQ6id345vfV7RfAmNMkbhVhQ=
@@ -367,7 +435,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uxtqFFT7jbgM25kgYhNGGF0f+ChvO/XGlFm7qFB0TFc=
+			GYj/WfJMPe1QGakyR5y0Vlve+1xJDUDoAxHuEOou2UQ=
 			</data>
 		</dict>
 		<key>Headers/IBS_Kit.h</key>
@@ -377,25 +445,39 @@
 			UGOxkT3fy6X39elNPBs99ZgIzOX9D9bcyLXDU9Vigus=
 			</data>
 		</dict>
+		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wrlWJwtDzYZcTkjW2G8lsiZJZ8wek06H1pjy4IJfHZo=
+			</data>
+		</dict>
+		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/UZTLmKlE/LktR5p5fCPBygNU+VTpEjX5vDD58tdyeo=
+			</data>
+		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h4fjgQ45R7VhoteR+sPNSoH/PJzPoLtP8KAECgSXtCk=
+			31YOTF9dR92w3DYn6zwc7c9d18Pn9u8kTfSxW8Rq9tw=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			13KW6KLYqeGsSHYn7WAm33NyIK8NQ0173wBLkfe02wM=
+			/UZTLmKlE/LktR5p5fCPBygNU+VTpEjX5vDD58tdyeo=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z6zMhLfYpPqHeyWsb4dLye8xXFfTd80KFiI6bpKWYFU=
+			w7+1dE9SltW79A701wAeLFYXbq93x5NfCuD/h3HurJI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -496,6 +578,20 @@
 			xpYszAQaQtGVjaJPeMUQQSbGbnyQo6oyhxehDRPkqBA=
 			</data>
 		</dict>
+		<key>iPad13,18.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+pe1xzGLp97z/MwWbhfVGrlVkdMRMOgRELarZ3EOQ64=
+			</data>
+		</dict>
+		<key>iPad13,19.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sb8GDtXR7FMeFGy+Pfc7q/vDaxS5VSIo9+badXO6Ik4=
+			</data>
+		</dict>
 		<key>iPad13,2.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -557,6 +653,62 @@
 			<key>hash2</key>
 			<data>
 			+lkcTWZN0F/qSEL7Eou0ZO+loJZ3G5r1eBn7p7yQGR0=
+			</data>
+		</dict>
+		<key>iPad14,3-A.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pn0rNqiBFjLboOHtakAXahFAqiCZNkfsN1xHfqK1QSA=
+			</data>
+		</dict>
+		<key>iPad14,3-B.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pn0rNqiBFjLboOHtakAXahFAqiCZNkfsN1xHfqK1QSA=
+			</data>
+		</dict>
+		<key>iPad14,4-A.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			567P52L9hT9xYp2QdK1ADyi5Lrw1li791gBJDIdQrY0=
+			</data>
+		</dict>
+		<key>iPad14,4-B.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			567P52L9hT9xYp2QdK1ADyi5Lrw1li791gBJDIdQrY0=
+			</data>
+		</dict>
+		<key>iPad14,5-A.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tdwcst9YK6XiRYbizwgHphxx0MYFGQhPijfYRD49twY=
+			</data>
+		</dict>
+		<key>iPad14,5-B.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Tdwcst9YK6XiRYbizwgHphxx0MYFGQhPijfYRD49twY=
+			</data>
+		</dict>
+		<key>iPad14,6-A.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BXGrJFBfD7fzpyK3WjolKJiOHZ0zjAqrHSMrDD8m6zI=
+			</data>
+		</dict>
+		<key>iPad14,6-B.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BXGrJFBfD7fzpyK3WjolKJiOHZ0zjAqrHSMrDD8m6zI=
 			</data>
 		</dict>
 		<key>iPad5,1.plist</key>
@@ -818,6 +970,13 @@
 			eMQQls8bm147JPAM59G8ap6fS62ccOBtWG1ENlrqhm4=
 			</data>
 		</dict>
+		<key>iPhone11,4.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			U3RoDzHPCFZymFhmMv1ISfG7KeWF6+n+6xzzekSEnHk=
+			</data>
+		</dict>
 		<key>iPhone11,6.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -921,6 +1080,34 @@
 			<key>hash2</key>
 			<data>
 			l416WJPs6wJQJ1kkWFelo48HQ+TPNKjnfi2/dplnMck=
+			</data>
+		</dict>
+		<key>iPhone14,7.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MQmLeCldoF99x51qSVjVKuiF6AViGI9PyauQeFbCKUo=
+			</data>
+		</dict>
+		<key>iPhone14,8.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HrMhpHat4IMn6hfCiRNXRBHxBAFI6+1+1lfGrriR9bo=
+			</data>
+		</dict>
+		<key>iPhone15,2.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aL/6QRJurUxaODdwtK51erM6urlkXVEhvSXslPwqyT4=
+			</data>
+		</dict>
+		<key>iPhone15,3.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NqP7NhQ/Vy99IrP3vkjFwR8n4SHCipOqbyOoZYHxgcw=
 			</data>
 		</dict>
 		<key>iPhone8,1.plist</key>
