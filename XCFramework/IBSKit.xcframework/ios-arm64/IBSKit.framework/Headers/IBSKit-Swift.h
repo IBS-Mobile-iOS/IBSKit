@@ -231,6 +231,8 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -299,6 +301,7 @@ SWIFT_CLASS("_TtC6IBSKit13IBSDonutChart") SWIFT_AVAILABILITY(ios,introduced=13.0
 
 
 
+
 ///
 SWIFT_CLASS("_TtC6IBSKit16IBSIndentedLabel") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface IBSIndentedLabel : UILabel
@@ -309,20 +312,6 @@ SWIFT_CLASS("_TtC6IBSKit16IBSIndentedLabel") SWIFT_AVAILABILITY(ios,introduced=1
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
-
-///
-SWIFT_CLASS("_TtC6IBSKit18IBSLineProgressBar") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface IBSLineProgressBar : UIView
-///
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-///
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
 
 
 ///
@@ -338,14 +327,23 @@ SWIFT_CLASS("_TtC6IBSKit11IBSPieChart") SWIFT_AVAILABILITY(ios,introduced=13.0)
 
 
 
+
+
+
+
+
+
 ///
-SWIFT_CLASS("_TtC6IBSKit18IBSProgressBarView") SWIFT_AVAILABILITY(ios,introduced=12.0)
-@interface IBSProgressBarView : UIView
+SWIFT_CLASS("_TtC6IBSKit13IBSPlayerView") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface IBSPlayerView : UIView
+///
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
++ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-///
-- (void)layoutSubviews;
 @end
+
+
 
 
 ///
@@ -353,23 +351,12 @@ SWIFT_CLASS("_TtC6IBSKit18IBSRingProgressBar") SWIFT_AVAILABILITY(ios,introduced
 @interface IBSRingProgressBar : UIView
 ///
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-///
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-
-
-
-///
-SWIFT_CLASS("_TtC6IBSKit22IBSRingProgressBarView") SWIFT_AVAILABILITY(ios,introduced=12.0)
-@interface IBSRingProgressBarView : UIView
-///
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 ///
 - (void)layoutSubviews;
 @end
+
+
 
 @class NSString;
 @class NSBundle;
@@ -383,15 +370,10 @@ SWIFT_CLASS("_TtC6IBSKit23IBSSplitSpaceController") SWIFT_AVAILABILITY(ios,intro
 /// bug:
 /// None
 - (void)viewDidLoad;
-/// Called to notify the view controller that its view has just laid out its subviews.
-/// authors:
-/// Dmitry Novikov
-/// bug:
-/// None
-- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -406,6 +388,17 @@ SWIFT_CLASS("_TtC6IBSKit19IBSVibrancyVisualFX") SWIFT_AVAILABILITY(ios,introduce
 @end
 
 
+
+
+
+///
+SWIFT_CLASS("_TtC6IBSKit14IBSVideoPlayer") SWIFT_AVAILABILITY(ios,introduced=13.0)
+@interface IBSVideoPlayer : NSObject
+///
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+///
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+@end
 
 
 

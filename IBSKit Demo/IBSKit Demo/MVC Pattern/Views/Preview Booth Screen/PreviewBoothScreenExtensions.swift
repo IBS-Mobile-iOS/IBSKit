@@ -38,14 +38,16 @@ extension PreviewBoothScreen: UITableViewDelegate {
             abilitiesViewController = PieChartScreen()
         case .donutChartView:
             abilitiesViewController = DonutChartScreen()
-        case .progressBarView:
-            abilitiesViewController = ProgressBarScreen()
+//        case .progressBarView:
+//            abilitiesViewController = ProgressBarScreen()
         case .ringProgressBarView:
             abilitiesViewController = RingProgressBarScreen()
         case .blurVisualFXView:
             abilitiesViewController = BlurVisualFXViewScreen()
         case .vibrancyVisualFXView:
             abilitiesViewController = VibrancyVisualFXViewScreen()
+        default:
+            abilitiesViewController = .init()
         }
 
         self.navigationController?.pushViewController(abilitiesViewController,
@@ -85,15 +87,16 @@ extension PreviewBoothScreen: UITableViewDataSource {
             cell.textLabel?.text = "\(IBSPieChart.self)"
         case .donutChartView:
             cell.textLabel?.text = "\(IBSDonutChart.self)"
-        case .progressBarView:
-            cell.textLabel?.text = "\(IBSProgressBarView.self)"
+//        case .progressBarView:
+//            cell.textLabel?.text = "\(IBSLineProgressBar.self)"
         case .ringProgressBarView:
-            cell.textLabel?.text = "\(IBSRingProgressBarView.self)"
+            cell.textLabel?.text = "\(IBSRingProgressBar.self)"
         case .blurVisualFXView:
             cell.textLabel?.text = "\(IBSBlurVisualFX.self)"
         case .vibrancyVisualFXView:
-//            cell.textLabel?.text = "\(IBSVibrancyVisualFXView.self)"
-            cell.textLabel?.text = "IBSVibrancyVisualFXView"
+            cell.textLabel?.text = "IBSVibrancyVisualFX"
+        default:
+            cell.textLabel?.text = "Nothing to present..."
         }
 
         return cell

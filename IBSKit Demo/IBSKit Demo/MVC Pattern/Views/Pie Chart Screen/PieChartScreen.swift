@@ -37,16 +37,20 @@ final class PieChartScreen: UIViewController {
         pieChartView.pattern = .init(size: 4.0,
                                      repeatsCount: 30,
                                      direction: .topLeftCorner)
-
+        
         pieChartView.textAttributes = .init(
             text: "30.0",
             color: .yellow,
             font: .boldSystemFont(ofSize: 80.0),
-            shadow: .init(color: .orange,
-                          offset: CGSize(width: 4.0,
-                                         height: 4.0),
-                          blur: 3.0,
-                          opacity: 1.0)
+            shadow: .init(
+                color: .orange,
+                opacity: 1,
+                radius: 3,
+                offset: .init(
+                    width: 4,
+                    height: 4
+                )
+            )
         )
 
         pieChartView.redraw()
