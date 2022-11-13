@@ -18,12 +18,12 @@
 
 ### Current Release:
 **Status:** `Stable`  
-**Version:** `1.0.0`  
-**Build:** `25`
+**Version:** `1.1.0`  
+**Build:** `9`
 
 #### IBSKit is an [Open Source](https://github.com/IBS-Mobile-iOS/IBSKit-Sources) [Xcode Fat Framework](#full-description) written in [Swift 5](https://github.com/apple/swift).
 
-#### `Xcode 13.0+` ﹒ `Swift 5.5+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
+#### `Xcode 14.0+` ﹒ `Swift 5.7+` ﹒ `iOS 13.0+` ﹒ `iPadOS 13.0+`
 
 - - -
 
