@@ -59,7 +59,7 @@ OS Version: \(operatingSystem.version.major).\(operatingSystem.version.minor).\(
 
 Software:
 
-Application Type: \(software.appType.rawValue)
+Application Type: \(software.type.rawValue)
 Is Simulator Environment: \(software.isSimulatorEnvironment)
 Is Low Power Mode Enabled: \(software.isLowPowerModeEnabled)
 

@@ -50,7 +50,7 @@ final class RingProgressBarScreen: UIViewController {
     // MARK: - Private functions
 
     private func setupNavigationController() {
-        navigationItem.title = "\(IBSRingProgressBarView.self)"
+        navigationItem.title = "\(IBSRingProgressBar.self)"
 
         navigationController?.navigationBar.prefersLargeTitles = false
     }
