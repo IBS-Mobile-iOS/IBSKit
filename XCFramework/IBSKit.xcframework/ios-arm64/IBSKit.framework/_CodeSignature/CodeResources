@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hYLzDR7K3jhGzS3xrwL4J40qBFU=
+		oz7fShJt66awE1hWerASjMdV9Q8=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		FdkTQZv8SrpntCvPSZAinq3YfcQ=
+		pCtA1TBdhR7z7IcH9iF+SyaMd5I=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		wANmPhSsg86E6kwQg7Y5jKzjVwo=
+		IGf0BMuhCfMceG9HprgyDS8CHAQ=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		uAZtVess+BVibcckI3wpSR8vjhw=
+		7OmGU59cst73b4cHN0MCuojNmAc=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		wANmPhSsg86E6kwQg7Y5jKzjVwo=
+		IGf0BMuhCfMceG9HprgyDS8CHAQ=
 		</data>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		O25wI4bdmr8r+SKVcAsEr+FtrOk=
+		JYeGFM6qpHZlPK6AcCpp8nvGY1o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -449,35 +449,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aA/vx/VMGcG86jwN0mqi6flN8prYhSU3wi5XSLxen8M=
+			IouMgpFzia3l48IGoTemjpsXUzMPYi4Kmr+Aj/RcAX0=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rGEOzu8mXpam5PMqLlVkytFNwm0j0qqLkPWyaWzElc=
+			GVhdL5RHrKvjipaFmKO9hsaD//wlhZZsT7op5Te8jEM=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iu1tweCjcXh9gBOlr6+K21lZhVqWT/NcPkgW8llfq1g=
+			Zw1b0jAXMWg8n06tlVHgtJsOk+CNw136tse61xAUsT0=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/rGEOzu8mXpam5PMqLlVkytFNwm0j0qqLkPWyaWzElc=
+			GVhdL5RHrKvjipaFmKO9hsaD//wlhZZsT7op5Te8jEM=
 			</data>
 		</dict>
 		<key>Modules/IBSKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AHmTQ/xes0oZNvRHjM5urinoxwDC21TzV9Pzo5nB0NA=
+			VP3Grho789sLZfaZLl1AAoo3INO/Y1dkoDhYgT//lKs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

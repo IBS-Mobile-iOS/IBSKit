@@ -71,6 +71,10 @@ public protocol IBSStackable {
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) final public class IBSIndentedLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) final public var padding: IBSKit.IBSPadding {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) @objc override final public func textRect(forBounds bounds: CoreFoundation.CGRect, limitedToNumberOfLines numberOfLines: Swift.Int) -> CoreFoundation.CGRect
   @_Concurrency.MainActor(unsafe) @objc override final public func drawText(in rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
