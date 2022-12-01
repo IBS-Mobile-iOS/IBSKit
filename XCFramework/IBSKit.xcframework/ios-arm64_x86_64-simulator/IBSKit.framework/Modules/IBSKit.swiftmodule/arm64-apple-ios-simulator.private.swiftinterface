@@ -71,6 +71,10 @@ public protocol IBSStackable {
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) final public class IBSIndentedLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) final public var padding: IBSKit.IBSPadding {
+    get
+    set
+  }
   @_Concurrency.MainActor(unsafe) @objc override final public func textRect(forBounds bounds: CoreFoundation.CGRect, limitedToNumberOfLines numberOfLines: Swift.Int) -> CoreFoundation.CGRect
   @_Concurrency.MainActor(unsafe) @objc override final public func drawText(in rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
@@ -272,6 +276,11 @@ extension IBSKit.IBSSDK {
 }
 @available(iOS 13.0, *)
 public struct IBSPadding {
+  public var top: CoreFoundation.CGFloat
+  public var left: CoreFoundation.CGFloat
+  public var right: CoreFoundation.CGFloat
+  public var bottom: CoreFoundation.CGFloat
+  public init(top: CoreFoundation.CGFloat = 0, left: CoreFoundation.CGFloat = 0, right: CoreFoundation.CGFloat = 0, bottom: CoreFoundation.CGFloat = 0)
 }
 @objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) final public class IBSPieChart : UIKit.UIView {
@@ -829,6 +838,9 @@ extension IBSKit.IBSDevice {
 }
 @available(iOS 13.0, *)
 public struct IBSBorderStyle {
+  public var color: CoreGraphics.CGColor
+  public var width: CoreFoundation.CGFloat
+  public init(color: UIKit.UIColor = .clear, width: CoreFoundation.CGFloat = 0)
 }
 @available(iOS 13.0, *)
 public protocol IBSHapticExecutable : AnyObject {

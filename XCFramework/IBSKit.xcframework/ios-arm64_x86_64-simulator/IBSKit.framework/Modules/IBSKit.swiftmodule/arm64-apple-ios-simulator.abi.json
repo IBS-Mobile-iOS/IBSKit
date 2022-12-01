@@ -520,6 +520,104 @@
         "printedName": "IBSIndentedLabel",
         "children": [
           {
+            "kind": "Var",
+            "name": "padding",
+            "printedName": "padding",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IBSPadding",
+                "printedName": "IBSKit.IBSPadding",
+                "usr": "s:6IBSKit10IBSPaddingV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvp",
+            "mangledName": "$s6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IBSPadding",
+                    "printedName": "IBSKit.IBSPadding",
+                    "usr": "s:6IBSKit10IBSPaddingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvg",
+                "mangledName": "$s6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IBSPadding",
+                    "printedName": "IBSKit.IBSPadding",
+                    "usr": "s:6IBSKit10IBSPaddingV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvs",
+                "mangledName": "$s6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvM",
+                "mangledName": "$s6IBSKit16IBSIndentedLabelC7paddingAA10IBSPaddingVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "textRect",
             "printedName": "textRect(forBounds:limitedToNumberOfLines:)",
@@ -6830,6 +6928,402 @@
         "kind": "TypeDecl",
         "name": "IBSPadding",
         "printedName": "IBSPadding",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "top",
+            "printedName": "top",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit10IBSPaddingV3top14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6IBSKit10IBSPaddingV3top12CoreGraphics7CGFloatVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV3top14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6IBSKit10IBSPaddingV3top12CoreGraphics7CGFloatVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV3top14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6IBSKit10IBSPaddingV3top12CoreGraphics7CGFloatVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV3top14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6IBSKit10IBSPaddingV3top12CoreGraphics7CGFloatVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "left",
+            "printedName": "left",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit10IBSPaddingV4left14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6IBSKit10IBSPaddingV4left12CoreGraphics7CGFloatVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV4left14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6IBSKit10IBSPaddingV4left12CoreGraphics7CGFloatVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV4left14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6IBSKit10IBSPaddingV4left12CoreGraphics7CGFloatVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV4left14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6IBSKit10IBSPaddingV4left12CoreGraphics7CGFloatVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "right",
+            "printedName": "right",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit10IBSPaddingV5right14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6IBSKit10IBSPaddingV5right12CoreGraphics7CGFloatVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV5right14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6IBSKit10IBSPaddingV5right12CoreGraphics7CGFloatVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV5right14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6IBSKit10IBSPaddingV5right12CoreGraphics7CGFloatVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV5right14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6IBSKit10IBSPaddingV5right12CoreGraphics7CGFloatVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bottom",
+            "printedName": "bottom",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit10IBSPaddingV6bottom14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6IBSKit10IBSPaddingV6bottom12CoreGraphics7CGFloatVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV6bottom14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6IBSKit10IBSPaddingV6bottom12CoreGraphics7CGFloatVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV6bottom14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6IBSKit10IBSPaddingV6bottom12CoreGraphics7CGFloatVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit10IBSPaddingV6bottom14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6IBSKit10IBSPaddingV6bottom12CoreGraphics7CGFloatVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(top:left:right:bottom:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IBSPadding",
+                "printedName": "IBSKit.IBSPadding",
+                "usr": "s:6IBSKit10IBSPaddingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6IBSKit10IBSPaddingV3top4left5right6bottomAC14CoreFoundation7CGFloatV_A3Jtcfc",
+            "mangledName": "$s6IBSKit10IBSPaddingV3top4left5right6bottomAC12CoreGraphics7CGFloatV_A3Jtcfc",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:6IBSKit10IBSPaddingV",
         "mangledName": "$s6IBSKit10IBSPaddingV",
@@ -23877,6 +24371,216 @@
         "kind": "TypeDecl",
         "name": "IBSBorderStyle",
         "printedName": "IBSBorderStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGColor",
+                "printedName": "CoreGraphics.CGColor",
+                "usr": "c:@T@CGColorRef"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavp",
+            "mangledName": "$s6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGColor",
+                    "printedName": "CoreGraphics.CGColor",
+                    "usr": "c:@T@CGColorRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavg",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGColor",
+                    "printedName": "CoreGraphics.CGColor",
+                    "usr": "c:@T@CGColorRef"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavs",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavM",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5colorSo10CGColorRefavM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "width",
+            "printedName": "width",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6IBSKit14IBSBorderStyleV5width14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6IBSKit14IBSBorderStyleV5width12CoreGraphics7CGFloatVvp",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5width14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5width12CoreGraphics7CGFloatVvg",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5width14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5width12CoreGraphics7CGFloatVvs",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6IBSKit14IBSBorderStyleV5width14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6IBSKit14IBSBorderStyleV5width12CoreGraphics7CGFloatVvM",
+                "moduleName": "IBSKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(color:width:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IBSBorderStyle",
+                "printedName": "IBSKit.IBSBorderStyle",
+                "usr": "s:6IBSKit14IBSBorderStyleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6IBSKit14IBSBorderStyleV5color5widthACSo7UIColorC_14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$s6IBSKit14IBSBorderStyleV5color5widthACSo7UIColorC_12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "IBSKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:6IBSKit14IBSBorderStyleV",
         "mangledName": "$s6IBSKit14IBSBorderStyleV",
@@ -26167,28 +26871,28 @@
     {
       "filePath": "\/Users\/d1mk4\/Library\/Mobile Documents\/com~apple~CloudDocs\/DDEC Files\/Jobs\/IBS\/Projects\/0. IBS Framework\/IBSKit-Sources\/IBS Kit\/IBS Kit\/Software\/General Purpose Types\/Structure Types\/Padding\/IBSPadding.swift",
       "kind": "IntegerLiteral",
-      "offset": 507,
+      "offset": 542,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/d1mk4\/Library\/Mobile Documents\/com~apple~CloudDocs\/DDEC Files\/Jobs\/IBS\/Projects\/0. IBS Framework\/IBSKit-Sources\/IBS Kit\/IBS Kit\/Software\/General Purpose Types\/Structure Types\/Padding\/IBSPadding.swift",
       "kind": "IntegerLiteral",
-      "offset": 535,
+      "offset": 570,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/d1mk4\/Library\/Mobile Documents\/com~apple~CloudDocs\/DDEC Files\/Jobs\/IBS\/Projects\/0. IBS Framework\/IBSKit-Sources\/IBS Kit\/IBS Kit\/Software\/General Purpose Types\/Structure Types\/Padding\/IBSPadding.swift",
       "kind": "IntegerLiteral",
-      "offset": 564,
+      "offset": 599,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/d1mk4\/Library\/Mobile Documents\/com~apple~CloudDocs\/DDEC Files\/Jobs\/IBS\/Projects\/0. IBS Framework\/IBSKit-Sources\/IBS Kit\/IBS Kit\/Software\/General Purpose Types\/Structure Types\/Padding\/IBSPadding.swift",
       "kind": "IntegerLiteral",
-      "offset": 594,
+      "offset": 629,
       "length": 1,
       "value": "0"
     },
@@ -28428,7 +29132,7 @@
     {
       "filePath": "\/Users\/d1mk4\/Library\/Mobile Documents\/com~apple~CloudDocs\/DDEC Files\/Jobs\/IBS\/Projects\/0. IBS Framework\/IBSKit-Sources\/IBS Kit\/IBS Kit\/Software\/General Purpose Types\/Structure Types\/Styles\/Border Style\/IBSBorderStyle.swift",
       "kind": "IntegerLiteral",
-      "offset": 455,
+      "offset": 476,
       "length": 1,
       "value": "0"
     },
